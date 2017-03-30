@@ -25,6 +25,7 @@
 		908BC4F51E8D4C7B00AB2380 /* DishesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4F41E8D4C7B00AB2380 /* DishesCell.swift */; };
 		908BC4F71E8D4CE100AB2380 /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4F61E8D4CE100AB2380 /* StepCell.swift */; };
 		908BC4F91E8D4D1500AB2380 /* PrepareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4F81E8D4D1500AB2380 /* PrepareController.swift */; };
+		908BC4FD1E8D782900AB2380 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4FC1E8D782900AB2380 /* ViewController2.swift */; };
 		909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C71E50B311009FC2C4 /* Preparation.swift */; };
 		909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C91E50B327009FC2C4 /* CookBook.swift */; };
 		909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16CB1E50B33C009FC2C4 /* Share.swift */; };
@@ -51,6 +52,7 @@
 		908BC4F41E8D4C7B00AB2380 /* DishesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishesCell.swift; sourceTree = "<group>"; };
 		908BC4F61E8D4CE100AB2380 /* StepCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
 		908BC4F81E8D4D1500AB2380 /* PrepareController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareController.swift; sourceTree = "<group>"; };
+		908BC4FC1E8D782900AB2380 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		909F16C71E50B311009FC2C4 /* Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preparation.swift; sourceTree = "<group>"; };
 		909F16C91E50B327009FC2C4 /* CookBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookBook.swift; sourceTree = "<group>"; };
 		909F16CB1E50B33C009FC2C4 /* Share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				908BC4DE1E8CAF8000AB2380 /* AppDelegate.swift */,
 				908BC4E01E8CB02D00AB2380 /* ViewController.swift */,
 				908BC4EC1E8CB52900AB2380 /* BundleDetailController.swift */,
+				908BC4FC1E8D782900AB2380 /* ViewController2.swift */,
 				901391401E50C57C00ABD3C5 /* ShoppingViewController.swift */,
 				169362BB1E4FBBB500F9B79B /* Assets.xcassets */,
 				908BC4EE1E8D49C800AB2380 /* Main.storyboard */,
@@ -221,6 +224,7 @@
 				908BC4E41E8CB10600AB2380 /* BundleClasses.swift in Sources */,
 				909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */,
 				908BC4ED1E8CB52900AB2380 /* BundleDetailController.swift in Sources */,
+				908BC4FD1E8D782900AB2380 /* ViewController2.swift in Sources */,
 				908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */,
 				908BC4DF1E8CAF8000AB2380 /* AppDelegate.swift in Sources */,
 				169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */,
