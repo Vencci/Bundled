@@ -32,7 +32,38 @@ class ShoppingViewController: UIViewController {
         return foods.count
     }
     
+    // 2
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ShopCell", for: indexPath) as! ShoppingListCell
+        let row = indexPath.row
+        // foods = instance.ingredients!
+        let food = foods[row]
+        cell.name.text = food.title
+        cell.number.text = food.content
+        if food.completed{
+            
+            cell.accessoryType = .checkmark
+            
+        }
+            
+        else{
+            
+            cell.accessoryType = .none
+            
+        }
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
         
+        var tappedItem:  Ingredients = self.foods[indexPath.row] as Ingredients
+        
+        tappedItem.completed = !tappedItem.completed
+        
+        tableView.reloadData()
+    }
+  
 
 
     /*
