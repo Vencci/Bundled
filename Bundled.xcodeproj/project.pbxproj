@@ -19,6 +19,7 @@
 		908BC4E41E8CB10600AB2380 /* BundleClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E31E8CB10600AB2380 /* BundleClasses.swift */; };
 		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
 		908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */; };
+		908BC4ED1E8CB52900AB2380 /* BundleDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EC1E8CB52900AB2380 /* BundleDetailController.swift */; };
 		909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C71E50B311009FC2C4 /* Preparation.swift */; };
 		909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C91E50B327009FC2C4 /* CookBook.swift */; };
 		909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16CB1E50B33C009FC2C4 /* Share.swift */; };
@@ -39,6 +40,7 @@
 		908BC4E31E8CB10600AB2380 /* BundleClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleClasses.swift; sourceTree = "<group>"; };
 		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
 		908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
+		908BC4EC1E8CB52900AB2380 /* BundleDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleDetailController.swift; sourceTree = "<group>"; };
 		909F16C71E50B311009FC2C4 /* Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preparation.swift; sourceTree = "<group>"; };
 		909F16C91E50B327009FC2C4 /* CookBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookBook.swift; sourceTree = "<group>"; };
 		909F16CB1E50B33C009FC2C4 /* Share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */,
 				908BC4DE1E8CAF8000AB2380 /* AppDelegate.swift */,
 				908BC4E01E8CB02D00AB2380 /* ViewController.swift */,
+				908BC4EC1E8CB52900AB2380 /* BundleDetailController.swift */,
 				169362B81E4FBBB500F9B79B /* Main.storyboard */,
 				169362BB1E4FBBB500F9B79B /* Assets.xcassets */,
 				169362BD1E4FBBB500F9B79B /* LaunchScreen.storyboard */,
@@ -190,6 +193,7 @@
 				908BC4DB1E8CAEF200AB2380 /* Models.swift in Sources */,
 				908BC4E41E8CB10600AB2380 /* BundleClasses.swift in Sources */,
 				909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */,
+				908BC4ED1E8CB52900AB2380 /* BundleDetailController.swift in Sources */,
 				908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */,
 				908BC4DF1E8CAF8000AB2380 /* AppDelegate.swift in Sources */,
 				169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */,
