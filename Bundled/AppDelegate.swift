@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Bundled
+//  AppStore
 //
-//  Created by si zhang on 17/2/11.
-//  Copyright © 2017年 si zhang. All rights reserved.
+//  Created by Wenqi Wang on 24/03/2017.
+//  Copyright © 2017 Wenqi Wang. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let layout = UICollectionViewFlowLayout()
+        let featuredAppsController = FeaturedBundlesController(collectionViewLayout: layout)
+        window?.rootViewController = UINavigationController(rootViewController:featuredAppsController)
         return true
     }
 

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		169362B51E4FBBB500F9B79B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169362B41E4FBBB500F9B79B /* AppDelegate.swift */; };
 		169362B71E4FBBB500F9B79B /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169362B61E4FBBB500F9B79B /* ViewController1.swift */; };
 		169362BA1E4FBBB500F9B79B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169362B81E4FBBB500F9B79B /* Main.storyboard */; };
 		169362BC1E4FBBB500F9B79B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169362BB1E4FBBB500F9B79B /* Assets.xcassets */; };
@@ -17,6 +16,9 @@
 		169362CB1E4FC27600F9B79B /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169362CA1E4FC27600F9B79B /* ViewController4.swift */; };
 		169362CD1E4FC28300F9B79B /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169362CC1E4FC28300F9B79B /* ViewController5.swift */; };
 		901391411E50C57C00ABD3C5 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901391401E50C57C00ABD3C5 /* ShoppingViewController.swift */; };
+		908BC4DB1E8CAEF200AB2380 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4DA1E8CAEF200AB2380 /* Models.swift */; };
+		908BC4DD1E8CAF3B00AB2380 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */; };
+		908BC4DF1E8CAF8000AB2380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4DE1E8CAF8000AB2380 /* AppDelegate.swift */; };
 		909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C71E50B311009FC2C4 /* Preparation.swift */; };
 		909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C91E50B327009FC2C4 /* CookBook.swift */; };
 		909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16CB1E50B33C009FC2C4 /* Share.swift */; };
@@ -25,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		169362B11E4FBBB500F9B79B /* Bundled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bundled.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		169362B41E4FBBB500F9B79B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		169362B61E4FBBB500F9B79B /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		169362B91E4FBBB500F9B79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		169362BB1E4FBBB500F9B79B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +37,9 @@
 		169362CA1E4FC27600F9B79B /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		169362CC1E4FC28300F9B79B /* ViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
 		901391401E50C57C00ABD3C5 /* ShoppingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		908BC4DA1E8CAEF200AB2380 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		908BC4DE1E8CAF8000AB2380 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		909F16C71E50B311009FC2C4 /* Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preparation.swift; sourceTree = "<group>"; };
 		909F16C91E50B327009FC2C4 /* CookBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookBook.swift; sourceTree = "<group>"; };
 		909F16CB1E50B33C009FC2C4 /* Share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
@@ -72,7 +76,9 @@
 		169362B31E4FBBB500F9B79B /* Bundled */ = {
 			isa = PBXGroup;
 			children = (
-				169362B41E4FBBB500F9B79B /* AppDelegate.swift */,
+				908BC4DA1E8CAEF200AB2380 /* Models.swift */,
+				908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */,
+				908BC4DE1E8CAF8000AB2380 /* AppDelegate.swift */,
 				169362B61E4FBBB500F9B79B /* ViewController1.swift */,
 				169362B81E4FBBB500F9B79B /* Main.storyboard */,
 				169362BB1E4FBBB500F9B79B /* Assets.xcassets */,
@@ -164,13 +170,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				908BC4DD1E8CAF3B00AB2380 /* CategoryCell.swift in Sources */,
 				169362B71E4FBBB500F9B79B /* ViewController1.swift in Sources */,
 				909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */,
 				901391411E50C57C00ABD3C5 /* ShoppingViewController.swift in Sources */,
-				169362B51E4FBBB500F9B79B /* AppDelegate.swift in Sources */,
+				908BC4DB1E8CAEF200AB2380 /* Models.swift in Sources */,
 				169362C91E4FC26600F9B79B /* ViewController3.swift in Sources */,
 				909F16CE1E50B350009FC2C4 /* ViewController2.swift in Sources */,
 				909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */,
+				908BC4DF1E8CAF8000AB2380 /* AppDelegate.swift in Sources */,
 				169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */,
 				169362CD1E4FC28300F9B79B /* ViewController5.swift in Sources */,
 				169362CB1E4FC27600F9B79B /* ViewController4.swift in Sources */,
