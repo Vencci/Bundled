@@ -13,7 +13,7 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDelegate, UICollection
     var featuredBundlesController : FeaturedBundlesController?
     var myBundle = Bundle(id: 123, name: "Bname", category: "Bcatagory", imageName: "Bimage", price: 123)
     var bundleName : String?
-    //var xxx = ""
+    var xxx = ""
     
     
     
@@ -69,8 +69,8 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDelegate, UICollection
     func setupViews() {
         backgroundColor = UIColor.clear
         myBundle.setName(bName: "this week")
-        //let name1 = myBundle.getName()
-        nameLabel.text! += myBundle.getName()
+        let name1 = myBundle.getName()
+        nameLabel.text! += name1
         
         addSubview(bundlesCollectionView)
         addSubview(dividerLineView)
