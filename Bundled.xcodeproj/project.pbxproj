@@ -23,6 +23,7 @@
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
 		908BC4F11E8D4B0300AB2380 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4F01E8D4B0300AB2380 /* Ingredients.swift */; };
 		908BC4F51E8D4C7B00AB2380 /* DishesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4F41E8D4C7B00AB2380 /* DishesCell.swift */; };
+		908BC4F71E8D4CE100AB2380 /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4F61E8D4CE100AB2380 /* StepCell.swift */; };
 		909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C71E50B311009FC2C4 /* Preparation.swift */; };
 		909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C91E50B327009FC2C4 /* CookBook.swift */; };
 		909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16CB1E50B33C009FC2C4 /* Share.swift */; };
@@ -47,6 +48,7 @@
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		908BC4F01E8D4B0300AB2380 /* Ingredients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 		908BC4F41E8D4C7B00AB2380 /* DishesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishesCell.swift; sourceTree = "<group>"; };
+		908BC4F61E8D4CE100AB2380 /* StepCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
 		909F16C71E50B311009FC2C4 /* Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preparation.swift; sourceTree = "<group>"; };
 		909F16C91E50B327009FC2C4 /* CookBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookBook.swift; sourceTree = "<group>"; };
 		909F16CB1E50B33C009FC2C4 /* Share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				908BC4F41E8D4C7B00AB2380 /* DishesCell.swift */,
+				908BC4F61E8D4CE100AB2380 /* StepCell.swift */,
 			);
 			name = "prep_and _recipes_cz";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				908BC4DD1E8CAF3B00AB2380 /* CategoryCell.swift in Sources */,
 				909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */,
 				901391411E50C57C00ABD3C5 /* ShoppingViewController.swift in Sources */,
+				908BC4F71E8D4CE100AB2380 /* StepCell.swift in Sources */,
 				908BC4DB1E8CAEF200AB2380 /* Models.swift in Sources */,
 				908BC4E41E8CB10600AB2380 /* BundleClasses.swift in Sources */,
 				909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */,
