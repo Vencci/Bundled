@@ -159,7 +159,7 @@ class BundleCategory: NSObject{
     }
 }
 
-class Recipe: NSObject {
+/*class Recipe: NSObject {
     var id: NSNumber?
     var name: String?
     var category: String?
@@ -225,6 +225,6 @@ class Dish: NSObject{
     override var description: String{
         return "this is a great dish"
     }
-}
+}*/
 
 

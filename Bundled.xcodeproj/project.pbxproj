@@ -16,6 +16,7 @@
 		908BC4DD1E8CAF3B00AB2380 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */; };
 		908BC4DF1E8CAF8000AB2380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4DE1E8CAF8000AB2380 /* AppDelegate.swift */; };
 		908BC4E11E8CB02D00AB2380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E01E8CB02D00AB2380 /* ViewController.swift */; };
+		908BC4E41E8CB10600AB2380 /* BundleClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E31E8CB10600AB2380 /* BundleClasses.swift */; };
 		909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C71E50B311009FC2C4 /* Preparation.swift */; };
 		909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C91E50B327009FC2C4 /* CookBook.swift */; };
 		909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16CB1E50B33C009FC2C4 /* Share.swift */; };
@@ -33,6 +34,7 @@
 		908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		908BC4DE1E8CAF8000AB2380 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		908BC4E01E8CB02D00AB2380 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		908BC4E31E8CB10600AB2380 /* BundleClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleClasses.swift; sourceTree = "<group>"; };
 		909F16C71E50B311009FC2C4 /* Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preparation.swift; sourceTree = "<group>"; };
 		909F16C91E50B327009FC2C4 /* CookBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookBook.swift; sourceTree = "<group>"; };
 		909F16CB1E50B33C009FC2C4 /* Share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
@@ -68,7 +70,7 @@
 		169362B31E4FBBB500F9B79B /* Bundled */ = {
 			isa = PBXGroup;
 			children = (
-				908BC4DA1E8CAEF200AB2380 /* Models.swift */,
+				908BC4E21E8CB0E200AB2380 /* models */,
 				908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */,
 				908BC4DE1E8CAF8000AB2380 /* AppDelegate.swift */,
 				908BC4E01E8CB02D00AB2380 /* ViewController.swift */,
@@ -83,6 +85,15 @@
 				909F16CB1E50B33C009FC2C4 /* Share.swift */,
 			);
 			path = Bundled;
+			sourceTree = "<group>";
+		};
+		908BC4E21E8CB0E200AB2380 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				908BC4DA1E8CAEF200AB2380 /* Models.swift */,
+				908BC4E31E8CB10600AB2380 /* BundleClasses.swift */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */,
 				901391411E50C57C00ABD3C5 /* ShoppingViewController.swift in Sources */,
 				908BC4DB1E8CAEF200AB2380 /* Models.swift in Sources */,
+				908BC4E41E8CB10600AB2380 /* BundleClasses.swift in Sources */,
 				909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */,
 				908BC4DF1E8CAF8000AB2380 /* AppDelegate.swift in Sources */,
 				169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */,
