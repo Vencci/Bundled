@@ -35,6 +35,7 @@
 		90DA0BDD1E93FD0C001A26C5 /* PreparationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BDC1E93FD0C001A26C5 /* PreparationController.swift */; };
 		90DA0BDF1E93FDE8001A26C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BDE1E93FDE8001A26C5 /* AppDelegate.swift */; };
 		90DA0BE11E93FE0C001A26C5 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BE01E93FE0C001A26C5 /* VideoCell.swift */; };
+		90DA0BE31E93FE2C001A26C5 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BE21E93FE2C001A26C5 /* MenuBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		90DA0BDC1E93FD0C001A26C5 /* PreparationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreparationController.swift; sourceTree = "<group>"; };
 		90DA0BDE1E93FDE8001A26C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90DA0BE01E93FE0C001A26C5 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		90DA0BE21E93FE2C001A26C5 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				90DA0BDC1E93FD0C001A26C5 /* PreparationController.swift */,
 				90DA0BDE1E93FDE8001A26C5 /* AppDelegate.swift */,
 				90DA0BE01E93FE0C001A26C5 /* VideoCell.swift */,
+				90DA0BE21E93FE2C001A26C5 /* MenuBar.swift */,
 			);
 			name = "xinban tab bar";
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				908BC4F11E8D4B0300AB2380 /* Ingredients.swift in Sources */,
 				908BC4E11E8CB02D00AB2380 /* ViewController.swift in Sources */,
 				908BC4DD1E8CAF3B00AB2380 /* CategoryCell.swift in Sources */,
+				90DA0BE31E93FE2C001A26C5 /* MenuBar.swift in Sources */,
 				908BC5011E8D78A100AB2380 /* IngredientsArray.swift in Sources */,
 				909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */,
 				901391411E50C57C00ABD3C5 /* ShoppingViewController.swift in Sources */,
