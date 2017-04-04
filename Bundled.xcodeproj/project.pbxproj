@@ -32,6 +32,7 @@
 		909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C91E50B327009FC2C4 /* CookBook.swift */; };
 		909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16CB1E50B33C009FC2C4 /* Share.swift */; };
 		90DA0BDB1E93FC9F001A26C5 /* IMPORTANT!!.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BDA1E93FC9F001A26C5 /* IMPORTANT!!.swift */; };
+		90DA0BDD1E93FD0C001A26C5 /* PreparationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BDC1E93FD0C001A26C5 /* PreparationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		909F16C91E50B327009FC2C4 /* CookBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookBook.swift; sourceTree = "<group>"; };
 		909F16CB1E50B33C009FC2C4 /* Share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 		90DA0BDA1E93FC9F001A26C5 /* IMPORTANT!!.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IMPORTANT!!.swift"; sourceTree = "<group>"; };
+		90DA0BDC1E93FD0C001A26C5 /* PreparationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreparationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				90DA0BDA1E93FC9F001A26C5 /* IMPORTANT!!.swift */,
+				90DA0BDC1E93FD0C001A26C5 /* PreparationController.swift */,
 			);
 			name = "xinban tab bar";
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				908BC4F91E8D4D1500AB2380 /* PrepareController.swift in Sources */,
 				908BC4E41E8CB10600AB2380 /* BundleClasses.swift in Sources */,
 				909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */,
+				90DA0BDD1E93FD0C001A26C5 /* PreparationController.swift in Sources */,
 				908BC4ED1E8CB52900AB2380 /* BundleDetailController.swift in Sources */,
 				908BC4FD1E8D782900AB2380 /* ViewController2.swift in Sources */,
 				908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */,
