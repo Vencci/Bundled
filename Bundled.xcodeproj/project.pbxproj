@@ -31,6 +31,7 @@
 		909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C71E50B311009FC2C4 /* Preparation.swift */; };
 		909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C91E50B327009FC2C4 /* CookBook.swift */; };
 		909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16CB1E50B33C009FC2C4 /* Share.swift */; };
+		90DA0BDB1E93FC9F001A26C5 /* IMPORTANT!!.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BDA1E93FC9F001A26C5 /* IMPORTANT!!.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		909F16C71E50B311009FC2C4 /* Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preparation.swift; sourceTree = "<group>"; };
 		909F16C91E50B327009FC2C4 /* CookBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookBook.swift; sourceTree = "<group>"; };
 		909F16CB1E50B33C009FC2C4 /* Share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
+		90DA0BDA1E93FC9F001A26C5 /* IMPORTANT!!.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IMPORTANT!!.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		169362B31E4FBBB500F9B79B /* Bundled */ = {
 			isa = PBXGroup;
 			children = (
+				90DA0BD91E93FC76001A26C5 /* xinban tab bar */,
 				908BC4F31E8D4C6000AB2380 /* prep_and _recipes_cz */,
 				908BC4E21E8CB0E200AB2380 /* models */,
 				908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */,
@@ -143,6 +146,14 @@
 				908BC5001E8D78A100AB2380 /* IngredientsArray.swift */,
 			);
 			name = "prep_and _recipes_cz";
+			sourceTree = "<group>";
+		};
+		90DA0BD91E93FC76001A26C5 /* xinban tab bar */ = {
+			isa = PBXGroup;
+			children = (
+				90DA0BDA1E93FC9F001A26C5 /* IMPORTANT!!.swift */,
+			);
+			name = "xinban tab bar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 				901391411E50C57C00ABD3C5 /* ShoppingViewController.swift in Sources */,
 				908BC4F71E8D4CE100AB2380 /* StepCell.swift in Sources */,
 				908BC4DB1E8CAEF200AB2380 /* Models.swift in Sources */,
+				90DA0BDB1E93FC9F001A26C5 /* IMPORTANT!!.swift in Sources */,
 				908BC4F91E8D4D1500AB2380 /* PrepareController.swift in Sources */,
 				908BC4E41E8CB10600AB2380 /* BundleClasses.swift in Sources */,
 				909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */,
