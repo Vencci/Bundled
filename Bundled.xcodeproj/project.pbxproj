@@ -34,6 +34,7 @@
 		90DA0BDB1E93FC9F001A26C5 /* IMPORTANT!!.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BDA1E93FC9F001A26C5 /* IMPORTANT!!.swift */; };
 		90DA0BDD1E93FD0C001A26C5 /* PreparationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BDC1E93FD0C001A26C5 /* PreparationController.swift */; };
 		90DA0BDF1E93FDE8001A26C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BDE1E93FDE8001A26C5 /* AppDelegate.swift */; };
+		90DA0BE11E93FE0C001A26C5 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BE01E93FE0C001A26C5 /* VideoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		90DA0BDA1E93FC9F001A26C5 /* IMPORTANT!!.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IMPORTANT!!.swift"; sourceTree = "<group>"; };
 		90DA0BDC1E93FD0C001A26C5 /* PreparationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreparationController.swift; sourceTree = "<group>"; };
 		90DA0BDE1E93FDE8001A26C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90DA0BE01E93FE0C001A26C5 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				90DA0BDA1E93FC9F001A26C5 /* IMPORTANT!!.swift */,
 				90DA0BDC1E93FD0C001A26C5 /* PreparationController.swift */,
 				90DA0BDE1E93FDE8001A26C5 /* AppDelegate.swift */,
+				90DA0BE01E93FE0C001A26C5 /* VideoCell.swift */,
 			);
 			name = "xinban tab bar";
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				908BC4ED1E8CB52900AB2380 /* BundleDetailController.swift in Sources */,
 				908BC4FD1E8D782900AB2380 /* ViewController2.swift in Sources */,
 				908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */,
+				90DA0BE11E93FE0C001A26C5 /* VideoCell.swift in Sources */,
 				908BC4DF1E8CAF8000AB2380 /* AppDelegate1.swift in Sources */,
 				169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */,
 				908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */,
