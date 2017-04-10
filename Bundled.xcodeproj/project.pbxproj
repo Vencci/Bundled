@@ -33,6 +33,7 @@
 		9020C0751E9B35DE00402B9D /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0741E9B35DE00402B9D /* Recipe.swift */; };
 		9020C0771E9B360200402B9D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0761E9B360200402B9D /* AccountView.swift */; };
 		9020C0791E9B361D00402B9D /* RecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0781E9B361D00402B9D /* RecipeController.swift */; };
+		9020C07B1E9B363D00402B9D /* RecipeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C07A1E9B363D00402B9D /* RecipeCollection.swift */; };
 		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
 		908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */; };
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		9020C0741E9B35DE00402B9D /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		9020C0761E9B360200402B9D /* AccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		9020C0781E9B361D00402B9D /* RecipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeController.swift; sourceTree = "<group>"; };
+		9020C07A1E9B363D00402B9D /* RecipeCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCollection.swift; sourceTree = "<group>"; };
 		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
 		908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				9020C0581E9B343900402B9D /* Ingredients.swift */,
 				9020C0641E9B353C00402B9D /* Bundles.swift */,
 				9020C0741E9B35DE00402B9D /* Recipe.swift */,
+				9020C07A1E9B363D00402B9D /* RecipeCollection.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */,
 				9020C0611E9B34FE00402B9D /* Preparation.swift in Sources */,
 				9020C0571E9B341F00402B9D /* BundleDetailController.swift in Sources */,
+				9020C07B1E9B363D00402B9D /* RecipeCollection.swift in Sources */,
 				9020C0651E9B353C00402B9D /* Bundles.swift in Sources */,
 				9020C0671E9B355A00402B9D /* VideoCell1.swift in Sources */,
 				9020C06F1E9B35AB00402B9D /* videoCell4.swift in Sources */,
