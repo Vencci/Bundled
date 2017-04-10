@@ -25,6 +25,10 @@
 		9020C0651E9B353C00402B9D /* Bundles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0641E9B353C00402B9D /* Bundles.swift */; };
 		9020C0671E9B355A00402B9D /* VideoCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0661E9B355A00402B9D /* VideoCell1.swift */; };
 		9020C0691E9B357700402B9D /* videoCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0681E9B357700402B9D /* videoCell2.swift */; };
+		9020C06B1E9B358F00402B9D /* videoCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C06A1E9B358F00402B9D /* videoCell3.swift */; };
+		9020C06F1E9B35AB00402B9D /* videoCell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C06C1E9B35AB00402B9D /* videoCell4.swift */; };
+		9020C0701E9B35AB00402B9D /* videoCell5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C06D1E9B35AB00402B9D /* videoCell5.swift */; };
+		9020C0711E9B35AB00402B9D /* videoCell6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C06E1E9B35AB00402B9D /* videoCell6.swift */; };
 		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
 		908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */; };
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
@@ -53,6 +57,10 @@
 		9020C0641E9B353C00402B9D /* Bundles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundles.swift; sourceTree = "<group>"; };
 		9020C0661E9B355A00402B9D /* VideoCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell1.swift; sourceTree = "<group>"; };
 		9020C0681E9B357700402B9D /* videoCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoCell2.swift; sourceTree = "<group>"; };
+		9020C06A1E9B358F00402B9D /* videoCell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoCell3.swift; sourceTree = "<group>"; };
+		9020C06C1E9B35AB00402B9D /* videoCell4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoCell4.swift; sourceTree = "<group>"; };
+		9020C06D1E9B35AB00402B9D /* videoCell5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoCell5.swift; sourceTree = "<group>"; };
+		9020C06E1E9B35AB00402B9D /* videoCell6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoCell6.swift; sourceTree = "<group>"; };
 		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
 		908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -122,6 +130,10 @@
 				9020C0621E9B351500402B9D /* User.swift */,
 				9020C0661E9B355A00402B9D /* VideoCell1.swift */,
 				9020C0681E9B357700402B9D /* videoCell2.swift */,
+				9020C06A1E9B358F00402B9D /* videoCell3.swift */,
+				9020C06C1E9B35AB00402B9D /* videoCell4.swift */,
+				9020C06D1E9B35AB00402B9D /* videoCell5.swift */,
+				9020C06E1E9B35AB00402B9D /* videoCell6.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -225,11 +237,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9020C04C1E9B32EF00402B9D /* AppDelegate.swift in Sources */,
+				9020C0711E9B35AB00402B9D /* videoCell6.swift in Sources */,
 				909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */,
 				9020C0611E9B34FE00402B9D /* Preparation.swift in Sources */,
 				9020C0571E9B341F00402B9D /* BundleDetailController.swift in Sources */,
 				9020C0651E9B353C00402B9D /* Bundles.swift in Sources */,
 				9020C0671E9B355A00402B9D /* VideoCell1.swift in Sources */,
+				9020C06F1E9B35AB00402B9D /* videoCell4.swift in Sources */,
 				9020C0631E9B351500402B9D /* User.swift in Sources */,
 				9020C0591E9B343900402B9D /* Ingredients.swift in Sources */,
 				9020C04E1E9B33B200402B9D /* Models.swift in Sources */,
@@ -237,6 +251,8 @@
 				9020C0551E9B341800402B9D /* FeaturedBundlesController.swift in Sources */,
 				9020C05B1E9B344700402B9D /* ViewController.swift in Sources */,
 				9020C0521E9B33EB00402B9D /* CategoryCell.swift in Sources */,
+				9020C06B1E9B358F00402B9D /* videoCell3.swift in Sources */,
+				9020C0701E9B35AB00402B9D /* videoCell5.swift in Sources */,
 				169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */,
 				9020C05D1E9B348D00402B9D /* TabBarController.swift in Sources */,
 				9020C0691E9B357700402B9D /* videoCell2.swift in Sources */,
