@@ -124,7 +124,7 @@ class BundleDetailHeader: BaseCell{
     override func setupViews() {
         super.setupViews()
         addSubview(imageView)
-        addSubview(segmentedControl)
+        //addSubview(segmentedControl)
         addSubview(bundleLabel)
         
         //bundleLabel.centerXAnchor.constraint(equalTo: bundleLabel.superview!.centerXAnchor).isActive = true
@@ -135,11 +135,11 @@ class BundleDetailHeader: BaseCell{
         addConstraintsWithFormat(format: "V:|-100-[v0(40)]", views: bundleLabel)
         addConstraintsWithFormat(format: "H:|[v0]|", views: bundleLabel)
 
-        addConstraintsWithFormat(format: "H:|[v0]|", views: segmentedControl)
-        addConstraintsWithFormat(format: "V:[v0(34)]|", views: segmentedControl)
+        //addConstraintsWithFormat(format: "H:|[v0]|", views: segmentedControl)
+        //addConstraintsWithFormat(format: "V:[v0(34)]|", views: segmentedControl)
         
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":imageView]))
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0(166)]", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":imageView]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0(200)]", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":imageView]))
         
         segmentedControl.addTarget(self, action: #selector(BundleDetailHeader.selectionChanged(_:)), for: .valueChanged)
     }
