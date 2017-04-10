@@ -12,6 +12,7 @@
 		169362BF1E4FBBB500F9B79B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169362BD1E4FBBB500F9B79B /* LaunchScreen.storyboard */; };
 		169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169362C61E4FC25500F9B79B /* IntroViewController.swift */; };
 		901391411E50C57C00ABD3C5 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901391401E50C57C00ABD3C5 /* ShoppingViewController.swift */; };
+		9020C04C1E9B32EF00402B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C04B1E9B32EF00402B9D /* AppDelegate.swift */; };
 		908BC4DB1E8CAEF200AB2380 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4DA1E8CAEF200AB2380 /* Models.swift */; };
 		908BC4DD1E8CAF3B00AB2380 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */; };
 		908BC4E11E8CB02D00AB2380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E01E8CB02D00AB2380 /* ViewController.swift */; };
@@ -32,7 +33,6 @@
 		909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16CB1E50B33C009FC2C4 /* Share.swift */; };
 		90DA0BDB1E93FC9F001A26C5 /* IMPORTANT!!.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BDA1E93FC9F001A26C5 /* IMPORTANT!!.swift */; };
 		90DA0BDD1E93FD0C001A26C5 /* PreparationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BDC1E93FD0C001A26C5 /* PreparationController.swift */; };
-		90DA0BDF1E93FDE8001A26C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BDE1E93FDE8001A26C5 /* AppDelegate.swift */; };
 		90DA0BE11E93FE0C001A26C5 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BE01E93FE0C001A26C5 /* VideoCell.swift */; };
 		90DA0BE31E93FE2C001A26C5 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA0BE21E93FE2C001A26C5 /* MenuBar.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +45,7 @@
 		169362C01E4FBBB500F9B79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		169362C61E4FC25500F9B79B /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		901391401E50C57C00ABD3C5 /* ShoppingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		9020C04B1E9B32EF00402B9D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		908BC4DA1E8CAEF200AB2380 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		908BC4E01E8CB02D00AB2380 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +66,6 @@
 		909F16CB1E50B33C009FC2C4 /* Share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 		90DA0BDA1E93FC9F001A26C5 /* IMPORTANT!!.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IMPORTANT!!.swift"; sourceTree = "<group>"; };
 		90DA0BDC1E93FD0C001A26C5 /* PreparationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreparationController.swift; sourceTree = "<group>"; };
-		90DA0BDE1E93FDE8001A26C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90DA0BE01E93FE0C001A26C5 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		90DA0BE21E93FE2C001A26C5 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +101,7 @@
 		169362B31E4FBBB500F9B79B /* Bundled */ = {
 			isa = PBXGroup;
 			children = (
+				9020C04B1E9B32EF00402B9D /* AppDelegate.swift */,
 				90DA0BD91E93FC76001A26C5 /* xinban tab bar */,
 				908BC4F31E8D4C6000AB2380 /* prep_and _recipes_cz */,
 				908BC4E21E8CB0E200AB2380 /* models */,
@@ -158,7 +159,6 @@
 			children = (
 				90DA0BDA1E93FC9F001A26C5 /* IMPORTANT!!.swift */,
 				90DA0BDC1E93FD0C001A26C5 /* PreparationController.swift */,
-				90DA0BDE1E93FDE8001A26C5 /* AppDelegate.swift */,
 				90DA0BE01E93FE0C001A26C5 /* VideoCell.swift */,
 				90DA0BE21E93FE2C001A26C5 /* MenuBar.swift */,
 			);
@@ -239,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9020C04C1E9B32EF00402B9D /* AppDelegate.swift in Sources */,
 				908BC4FF1E8D787B00AB2380 /* Ingredients.swift in Sources */,
 				908BC4F11E8D4B0300AB2380 /* Ingredients.swift in Sources */,
 				908BC4E11E8CB02D00AB2380 /* ViewController.swift in Sources */,
@@ -262,7 +263,6 @@
 				908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */,
 				909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */,
 				908BC4F51E8D4C7B00AB2380 /* DishesCell.swift in Sources */,
-				90DA0BDF1E93FDE8001A26C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

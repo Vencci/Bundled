@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  TabbarPages
+//  AppStore
 //
-//  Created by Wenqi Wang on 31/03/2017.
-//  Copyright © 2017 SixSix. All rights reserved.
+//  Created by Wenqi Wang on 24/03/2017.
+//  Copyright © 2017 Wenqi Wang. All rights reserved.
 //
 
 import UIKit
@@ -16,15 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        let layout = UICollectionViewFlowLayout()
-        window?.rootViewController = UINavigationController(rootViewController: PreparationController(collectionViewLayout: layout))
-        UINavigationBar.appearance().barTintColor = UIColor(red: 32/255, green: 150/255, blue: 230/255, alpha: 1)
         
-        //消除view间黑线
-        UINavigationBar.appearance().shadowImage = UIImage()
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        let featuredAppsController = LoginViewController()
+        window?.rootViewController = UINavigationController(rootViewController:featuredAppsController)
         return true
     }
 
