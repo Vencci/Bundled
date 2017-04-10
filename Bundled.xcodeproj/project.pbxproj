@@ -18,6 +18,7 @@
 		9020C0571E9B341F00402B9D /* BundleDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0561E9B341F00402B9D /* BundleDetailController.swift */; };
 		9020C0591E9B343900402B9D /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0581E9B343900402B9D /* Ingredients.swift */; };
 		9020C05B1E9B344700402B9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C05A1E9B344700402B9D /* ViewController.swift */; };
+		9020C05D1E9B348D00402B9D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C05C1E9B348D00402B9D /* TabBarController.swift */; };
 		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
 		908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */; };
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		9020C0561E9B341F00402B9D /* BundleDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleDetailController.swift; sourceTree = "<group>"; };
 		9020C0581E9B343900402B9D /* Ingredients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 		9020C05A1E9B344700402B9D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9020C05C1E9B348D00402B9D /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
 		908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -80,12 +82,12 @@
 			isa = PBXGroup;
 			children = (
 				9020C04B1E9B32EF00402B9D /* AppDelegate.swift */,
-				169362BB1E4FBBB500F9B79B /* Assets.xcassets */,
-				9020C04F1E9B33CA00402B9D /* model */,
 				908BC4EE1E8D49C800AB2380 /* Main.storyboard */,
-				9020C0501E9B33E100402B9D /* view */,
 				169362BD1E4FBBB500F9B79B /* LaunchScreen.storyboard */,
 				169362C01E4FBBB500F9B79B /* Info.plist */,
+				169362BB1E4FBBB500F9B79B /* Assets.xcassets */,
+				9020C04F1E9B33CA00402B9D /* model */,
+				9020C0501E9B33E100402B9D /* view */,
 				9020C0531E9B340700402B9D /* controller */,
 				908BC4E51E8CB24600AB2380 /* Testcases */,
 			);
@@ -112,6 +114,7 @@
 		9020C0531E9B340700402B9D /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				9020C05C1E9B348D00402B9D /* TabBarController.swift */,
 				9020C0561E9B341F00402B9D /* BundleDetailController.swift */,
 				9020C05A1E9B344700402B9D /* ViewController.swift */,
 				9020C0541E9B341800402B9D /* FeaturedBundlesController.swift */,
@@ -217,6 +220,7 @@
 				9020C05B1E9B344700402B9D /* ViewController.swift in Sources */,
 				9020C0521E9B33EB00402B9D /* CategoryCell.swift in Sources */,
 				169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */,
+				9020C05D1E9B348D00402B9D /* TabBarController.swift in Sources */,
 				908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */,
 				909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */,
 			);
