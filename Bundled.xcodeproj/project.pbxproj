@@ -16,6 +16,8 @@
 		9020C0521E9B33EB00402B9D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0511E9B33EB00402B9D /* CategoryCell.swift */; };
 		9020C0551E9B341800402B9D /* FeaturedBundlesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0541E9B341800402B9D /* FeaturedBundlesController.swift */; };
 		9020C0571E9B341F00402B9D /* BundleDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0561E9B341F00402B9D /* BundleDetailController.swift */; };
+		9020C0591E9B343900402B9D /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0581E9B343900402B9D /* Ingredients.swift */; };
+		9020C05B1E9B344700402B9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C05A1E9B344700402B9D /* ViewController.swift */; };
 		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
 		908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */; };
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 		9020C0511E9B33EB00402B9D /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		9020C0541E9B341800402B9D /* FeaturedBundlesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedBundlesController.swift; sourceTree = "<group>"; };
 		9020C0561E9B341F00402B9D /* BundleDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleDetailController.swift; sourceTree = "<group>"; };
+		9020C0581E9B343900402B9D /* Ingredients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		9020C05A1E9B344700402B9D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
 		908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				9020C04D1E9B33B200402B9D /* Models.swift */,
+				9020C0581E9B343900402B9D /* Ingredients.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				9020C0561E9B341F00402B9D /* BundleDetailController.swift */,
+				9020C05A1E9B344700402B9D /* ViewController.swift */,
 				9020C0541E9B341800402B9D /* FeaturedBundlesController.swift */,
 			);
 			name = controller;
@@ -204,9 +210,11 @@
 				909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */,
 				909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */,
 				9020C0571E9B341F00402B9D /* BundleDetailController.swift in Sources */,
+				9020C0591E9B343900402B9D /* Ingredients.swift in Sources */,
 				9020C04E1E9B33B200402B9D /* Models.swift in Sources */,
 				908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */,
 				9020C0551E9B341800402B9D /* FeaturedBundlesController.swift in Sources */,
+				9020C05B1E9B344700402B9D /* ViewController.swift in Sources */,
 				9020C0521E9B33EB00402B9D /* CategoryCell.swift in Sources */,
 				169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */,
 				908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */,
