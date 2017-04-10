@@ -20,10 +20,10 @@
 		9020C05B1E9B344700402B9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C05A1E9B344700402B9D /* ViewController.swift */; };
 		9020C05D1E9B348D00402B9D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C05C1E9B348D00402B9D /* TabBarController.swift */; };
 		9020C05F1E9B34AE00402B9D /* PreparationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C05E1E9B34AE00402B9D /* PreparationController.swift */; };
+		9020C0611E9B34FE00402B9D /* Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0601E9B34FE00402B9D /* Preparation.swift */; };
 		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
 		908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */; };
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
-		909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C71E50B311009FC2C4 /* Preparation.swift */; };
 		909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C91E50B327009FC2C4 /* CookBook.swift */; };
 		909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16CB1E50B33C009FC2C4 /* Share.swift */; };
 /* End PBXBuildFile section */
@@ -44,10 +44,10 @@
 		9020C05A1E9B344700402B9D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9020C05C1E9B348D00402B9D /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9020C05E1E9B34AE00402B9D /* PreparationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreparationController.swift; sourceTree = "<group>"; };
+		9020C0601E9B34FE00402B9D /* Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preparation.swift; sourceTree = "<group>"; };
 		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
 		908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		909F16C71E50B311009FC2C4 /* Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preparation.swift; sourceTree = "<group>"; };
 		909F16C91E50B327009FC2C4 /* CookBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookBook.swift; sourceTree = "<group>"; };
 		909F16CB1E50B33C009FC2C4 /* Share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +99,7 @@
 		9020C04F1E9B33CA00402B9D /* model */ = {
 			isa = PBXGroup;
 			children = (
+				9020C0601E9B34FE00402B9D /* Preparation.swift */,
 				9020C04D1E9B33B200402B9D /* Models.swift */,
 				9020C0581E9B343900402B9D /* Ingredients.swift */,
 			);
@@ -129,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				169362C61E4FC25500F9B79B /* IntroViewController.swift */,
-				909F16C71E50B311009FC2C4 /* Preparation.swift */,
 				909F16C91E50B327009FC2C4 /* CookBook.swift */,
 				909F16CB1E50B33C009FC2C4 /* Share.swift */,
 				908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */,
@@ -213,8 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9020C04C1E9B32EF00402B9D /* AppDelegate.swift in Sources */,
-				909F16C81E50B311009FC2C4 /* Preparation.swift in Sources */,
 				909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */,
+				9020C0611E9B34FE00402B9D /* Preparation.swift in Sources */,
 				9020C0571E9B341F00402B9D /* BundleDetailController.swift in Sources */,
 				9020C0591E9B343900402B9D /* Ingredients.swift in Sources */,
 				9020C04E1E9B33B200402B9D /* Models.swift in Sources */,
