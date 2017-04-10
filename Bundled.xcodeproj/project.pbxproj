@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		169362BA1E4FBBB500F9B79B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169362B81E4FBBB500F9B79B /* Main.storyboard */; };
-		169362BC1E4FBBB500F9B79B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169362BB1E4FBBB500F9B79B /* Assets.xcassets */; };
 		169362BF1E4FBBB500F9B79B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169362BD1E4FBBB500F9B79B /* LaunchScreen.storyboard */; };
 		169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169362C61E4FC25500F9B79B /* IntroViewController.swift */; };
 		9020C04C1E9B32EF00402B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C04B1E9B32EF00402B9D /* AppDelegate.swift */; };
@@ -61,6 +60,7 @@
 		9020C0B11E9B395900402B9D /* cutpotato.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A71E9B394100402B9D /* cutpotato.mp4 */; };
 		9020C0B21E9B395900402B9D /* peelsalmon.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A81E9B394100402B9D /* peelsalmon.mp4 */; };
 		9020C0B31E9B395900402B9D /* pinnapple.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A91E9B394100402B9D /* pinnapple.mp4 */; };
+		9020C0B71E9B39CD00402B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0B61E9B39CD00402B9D /* Assets.xcassets */; };
 		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
 		908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */; };
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
@@ -71,7 +71,6 @@
 /* Begin PBXFileReference section */
 		169362B11E4FBBB500F9B79B /* Bundled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bundled.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		169362B91E4FBBB500F9B79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		169362BB1E4FBBB500F9B79B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		169362BE1E4FBBB500F9B79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169362C01E4FBBB500F9B79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		169362C61E4FC25500F9B79B /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +124,7 @@
 		9020C0A71E9B394100402B9D /* cutpotato.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cutpotato.mp4; sourceTree = "<group>"; };
 		9020C0A81E9B394100402B9D /* peelsalmon.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = peelsalmon.mp4; sourceTree = "<group>"; };
 		9020C0A91E9B394100402B9D /* pinnapple.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinnapple.mp4; sourceTree = "<group>"; };
+		9020C0B61E9B39CD00402B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
 		908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 				908BC4EE1E8D49C800AB2380 /* Main.storyboard */,
 				169362BD1E4FBBB500F9B79B /* LaunchScreen.storyboard */,
 				169362C01E4FBBB500F9B79B /* Info.plist */,
-				169362BB1E4FBBB500F9B79B /* Assets.xcassets */,
+				9020C0B61E9B39CD00402B9D /* Assets.xcassets */,
 				9020C04F1E9B33CA00402B9D /* model */,
 				9020C0501E9B33E100402B9D /* view */,
 				9020C0531E9B340700402B9D /* controller */,
@@ -322,6 +322,7 @@
 				9020C0AB1E9B395900402B9D /* beategg.mp4 in Resources */,
 				9020C0AC1E9B395900402B9D /* beef.mp4 in Resources */,
 				9020C0AD1E9B395900402B9D /* carrot.mp4 in Resources */,
+				9020C0B71E9B39CD00402B9D /* Assets.xcassets in Resources */,
 				9020C0AE1E9B395900402B9D /* cutbean.mp4 in Resources */,
 				9020C0AF1E9B395900402B9D /* cutbroccoli.mp4 in Resources */,
 				9020C0B01E9B395900402B9D /* cutonion.mp4 in Resources */,
@@ -329,7 +330,6 @@
 				9020C0B21E9B395900402B9D /* peelsalmon.mp4 in Resources */,
 				9020C0B31E9B395900402B9D /* pinnapple.mp4 in Resources */,
 				169362BF1E4FBBB500F9B79B /* LaunchScreen.storyboard in Resources */,
-				169362BC1E4FBBB500F9B79B /* Assets.xcassets in Resources */,
 				169362BA1E4FBBB500F9B79B /* Main.storyboard in Resources */,
 				908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */,
 			);
