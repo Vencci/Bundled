@@ -134,7 +134,9 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         //firebase
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         
+        view.addGestureRecognizer(tap)
         
         
         
@@ -151,6 +153,9 @@ class LoginViewController: UIViewController {
         setupLoginRegisterSegmentedControl()
     }
     
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
     //设置reference, class里的任意一个func 都可以使用
     var inputsContainerViewHeightAnchor: NSLayoutConstraint?
     var nameTextFieldHeightAnchor: NSLayoutConstraint?
