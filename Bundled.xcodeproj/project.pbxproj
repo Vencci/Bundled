@@ -47,6 +47,7 @@
 		9020C0911E9B371F00402B9D /* TimePriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0901E9B371F00402B9D /* TimePriceCell.swift */; };
 		9020C0931E9B375000402B9D /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0921E9B375000402B9D /* RecipeCell.swift */; };
 		9020C0951E9B376500402B9D /* RecipeStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0941E9B376500402B9D /* RecipeStepCell.swift */; };
+		9020C0971E9B378000402B9D /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0961E9B378000402B9D /* DescriptionCell.swift */; };
 		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
 		908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */; };
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
@@ -97,6 +98,7 @@
 		9020C0901E9B371F00402B9D /* TimePriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePriceCell.swift; sourceTree = "<group>"; };
 		9020C0921E9B375000402B9D /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		9020C0941E9B376500402B9D /* RecipeStepCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeStepCell.swift; sourceTree = "<group>"; };
+		9020C0961E9B378000402B9D /* DescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
 		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
 		908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				9020C0901E9B371F00402B9D /* TimePriceCell.swift */,
 				9020C0921E9B375000402B9D /* RecipeCell.swift */,
 				9020C0941E9B376500402B9D /* RecipeStepCell.swift */,
+				9020C0961E9B378000402B9D /* DescriptionCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				9020C07B1E9B363D00402B9D /* RecipeCollection.swift in Sources */,
 				9020C0831E9B366000402B9D /* RecipeStepCell1.swift in Sources */,
 				9020C0891E9B366000402B9D /* RecipeStepCell7.swift in Sources */,
+				9020C0971E9B378000402B9D /* DescriptionCell.swift in Sources */,
 				9020C08D1E9B368C00402B9D /* RecipeStepCell9.swift in Sources */,
 				9020C08C1E9B368C00402B9D /* RecipeStepCell8.swift in Sources */,
 				9020C0871E9B366000402B9D /* RecipeStepCell5.swift in Sources */,
