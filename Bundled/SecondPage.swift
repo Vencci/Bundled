@@ -127,10 +127,12 @@ class SecondPage: UIViewController {
         button.addTarget(self, action: #selector(LowfatFunc), for: .touchUpInside)
         return button
     }()
-    //button UI
+    
+    //button Cancel
     lazy var PopCancelButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = UIColor(r: 80, g: 101, b: 161)
+        button.layer.cornerRadius = 5
         button.setTitle("Cancel", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(UIColor.white, for: .normal)
@@ -138,10 +140,11 @@ class SecondPage: UIViewController {
         button.addTarget(self, action: #selector(dismissPop), for: .touchUpInside)
         return button
     }()
-    //
+    //Button Save
     lazy var PopSaveButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = UIColor(r: 80, g: 101, b: 161)
+        button.layer.cornerRadius = 5
         button.setTitle("Save", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(UIColor.white, for: .normal)
@@ -149,6 +152,7 @@ class SecondPage: UIViewController {
         button.addTarget(self, action: #selector(goToNextView), for: .touchUpInside)
         return button
     }()
+    
     //number of meal
     let mealTextField: UITextField = {
         let tf = UITextField()
@@ -171,6 +175,9 @@ class SecondPage: UIViewController {
     //view did load 从这里开始
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SecondPage.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         
         //add background
         view.addSubview(BgImage)
@@ -203,6 +210,10 @@ class SecondPage: UIViewController {
         
     }
     
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
     
     func animateIn(){
         view.addSubview(addItemView)
@@ -300,17 +311,17 @@ class SecondPage: UIViewController {
     func setupPopButton() {
         //need x, y, width, height constraints
         PopCancelButton.centerXAnchor.constraint(equalTo: addItemView.centerXAnchor).isActive = true
-        PopCancelButton.centerYAnchor.constraint(equalTo: addItemView.bottomAnchor, constant: -50).isActive = true
+        PopCancelButton.centerYAnchor.constraint(equalTo: addItemView.bottomAnchor, constant: -20).isActive = true
         PopCancelButton.widthAnchor.constraint(equalTo: addItemView.widthAnchor, constant: -24).isActive = true
-        PopCancelButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        PopCancelButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
     }
     
     func setupSaveButton() {
         //need x, y, width, height constraints
         PopSaveButton.centerXAnchor.constraint(equalTo: addItemView.centerXAnchor).isActive = true
-        PopSaveButton.centerYAnchor.constraint(equalTo: PopCancelButton.topAnchor, constant: -30).isActive = true
+        PopSaveButton.centerYAnchor.constraint(equalTo: PopCancelButton.topAnchor, constant: -20).isActive = true
         PopSaveButton.widthAnchor.constraint(equalTo: addItemView.widthAnchor, constant: -24).isActive = true
-        PopSaveButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        PopSaveButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
     }
     
     func goToBundle(){
@@ -331,39 +342,39 @@ class SecondPage: UIViewController {
     //button 1: morning
     func setupMorningButton() {
         //need x, y, width, height constraints
-        PopMorningButton.leftAnchor.constraint(equalTo: addItemView.leftAnchor).isActive = true
-        PopMorningButton.centerYAnchor.constraint(equalTo: PopSaveButton.topAnchor, constant: -30).isActive = true
-        PopMorningButton.widthAnchor.constraint(equalToConstant: 75).isActive = true
+        PopMorningButton.rightAnchor.constraint(equalTo: PopLunchButton.leftAnchor, constant: -15).isActive = true
+        PopMorningButton.centerYAnchor.constraint(equalTo: PopVegetableButton.topAnchor, constant: -30).isActive = true
+        PopMorningButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
         PopMorningButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
     //button 2: lunch
     func setupLunchButton() {
         //need x, y, width, height constraints
-        PopLunchButton.leftAnchor.constraint(equalTo: PopMorningButton.rightAnchor).isActive = true
-        PopLunchButton.centerYAnchor.constraint(equalTo: PopSaveButton.topAnchor, constant: -30).isActive = true
-        PopLunchButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        PopLunchButton.centerXAnchor.constraint(equalTo: addItemView.centerXAnchor).isActive = true
+        PopLunchButton.centerYAnchor.constraint(equalTo: PopVegetableButton.topAnchor, constant: -30).isActive = true
+        PopLunchButton.widthAnchor.constraint(equalToConstant: 65).isActive = true
         PopLunchButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
     //button 3: dinner
     func setupDinnerButton() {
         //need x, y, width, height constraints
-        PopDinnerButton.leftAnchor.constraint(equalTo: PopLunchButton.rightAnchor).isActive = true
-        PopDinnerButton.centerYAnchor.constraint(equalTo: PopSaveButton.topAnchor, constant: -30).isActive = true
-        PopDinnerButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        PopDinnerButton.leftAnchor.constraint(equalTo: PopLunchButton.rightAnchor, constant: 15).isActive = true
+        PopDinnerButton.centerYAnchor.constraint(equalTo: PopVegetableButton.topAnchor, constant: -30).isActive = true
+        PopDinnerButton.widthAnchor.constraint(equalToConstant: 65).isActive = true
         PopDinnerButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
     //button 4: vegetable
     func setupVegetableButton() {
         //need x, y, width, height constraints
-        PopVegetableButton.leftAnchor.constraint(equalTo: PopDinnerButton.rightAnchor).isActive = true
+        PopVegetableButton.leftAnchor.constraint(equalTo: addItemView.leftAnchor, constant: 60).isActive = true
         PopVegetableButton.centerYAnchor.constraint(equalTo: PopSaveButton.topAnchor, constant: -30).isActive = true
-        PopVegetableButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        PopVegetableButton.widthAnchor.constraint(equalToConstant: 85).isActive = true
         PopVegetableButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
     //button 5: low fat
     func setupLowfatButton() {
         //need x, y, width, height constraints
-        PopLowfatButton.leftAnchor.constraint(equalTo: PopVegetableButton.rightAnchor).isActive = true
+        PopLowfatButton.rightAnchor.constraint(equalTo: addItemView.rightAnchor, constant: -70).isActive = true
         PopLowfatButton.centerYAnchor.constraint(equalTo: PopSaveButton.topAnchor, constant: -30).isActive = true
         PopLowfatButton.widthAnchor.constraint(equalToConstant: 65).isActive = true
         PopLowfatButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
@@ -372,52 +383,52 @@ class SecondPage: UIViewController {
     func MorningFunc(){
         morningFlag = morningFlag*(-1)
         if morningFlag == -1 {
-            PopMorningButton.backgroundColor = UIColor.clear
+            PopMorningButton.backgroundColor = UIColor(r: 80, g: 101, b: 161)
             dietRestrictions.append((PopMorningButton.titleLabel?.text)!)
             print((PopMorningButton.titleLabel?.text) ?? "null")
         }
         if morningFlag == 1{
-            PopMorningButton.backgroundColor = UIColor(r: 80, g: 101, b: 161)
+            PopMorningButton.backgroundColor = UIColor.clear
         }
     }
     func LunchFunc(){
         lunchFlag = lunchFlag*(-1)
         if lunchFlag == -1 {
-            PopLunchButton.backgroundColor = UIColor.black
+            PopLunchButton.backgroundColor = UIColor(r: 80, g: 101, b: 161)
             dietRestrictions.append((PopLunchButton.titleLabel?.text)!)
         }
         if lunchFlag == 1{
-            PopLunchButton.backgroundColor = UIColor(r: 80, g: 101, b: 161)
+            PopLunchButton.backgroundColor = UIColor.clear
         }
     }
     func DinnerFunc(){
         dinnerFlag = dinnerFlag*(-1)
         if dinnerFlag == -1 {
-            PopDinnerButton.backgroundColor = UIColor.black
+            PopDinnerButton.backgroundColor = UIColor(r: 80, g: 101, b: 161)
             dietRestrictions.append((PopDinnerButton.titleLabel?.text)!)
         }
         if dinnerFlag == 1{
-            PopDinnerButton.backgroundColor = UIColor(r: 80, g: 101, b: 161)
+            PopDinnerButton.backgroundColor = UIColor.clear
         }
     }
     func VegetableFunc(){
         vegetableFlag = vegetableFlag*(-1)
         if vegetableFlag == -1 {
-            PopVegetableButton.backgroundColor = UIColor.black
+            PopVegetableButton.backgroundColor = UIColor(r: 80, g: 101, b: 161)
             dietRestrictions.append((PopVegetableButton.titleLabel?.text)!)
         }
         if vegetableFlag == 1{
-            PopVegetableButton.backgroundColor = UIColor(r: 80, g: 101, b: 161)
+            PopVegetableButton.backgroundColor = UIColor.clear
         }
     }
     func LowfatFunc(){
         lowfatFlag = lowfatFlag*(-1)
         if lowfatFlag == -1 {
-            PopLowfatButton.backgroundColor = UIColor.black
+            PopLowfatButton.backgroundColor = UIColor(r: 80, g: 101, b: 161)
             dietRestrictions.append((PopLowfatButton.titleLabel?.text)!)
         }
         if lowfatFlag == 1{
-            PopLowfatButton.backgroundColor = UIColor(r: 80, g: 101, b: 161)
+            PopLowfatButton.backgroundColor = UIColor.clear
         }
     }
     
