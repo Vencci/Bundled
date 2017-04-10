@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		169362BA1E4FBBB500F9B79B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169362B81E4FBBB500F9B79B /* Main.storyboard */; };
 		169362BF1E4FBBB500F9B79B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169362BD1E4FBBB500F9B79B /* LaunchScreen.storyboard */; };
-		169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169362C61E4FC25500F9B79B /* IntroViewController.swift */; };
 		9020C04C1E9B32EF00402B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C04B1E9B32EF00402B9D /* AppDelegate.swift */; };
 		9020C04E1E9B33B200402B9D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C04D1E9B33B200402B9D /* Models.swift */; };
 		9020C0521E9B33EB00402B9D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0511E9B33EB00402B9D /* CategoryCell.swift */; };
@@ -61,11 +60,7 @@
 		9020C0B21E9B395900402B9D /* peelsalmon.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A81E9B394100402B9D /* peelsalmon.mp4 */; };
 		9020C0B31E9B395900402B9D /* pinnapple.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A91E9B394100402B9D /* pinnapple.mp4 */; };
 		9020C0B71E9B39CD00402B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0B61E9B39CD00402B9D /* Assets.xcassets */; };
-		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
-		908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */; };
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
-		909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16C91E50B327009FC2C4 /* CookBook.swift */; };
-		909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F16CB1E50B33C009FC2C4 /* Share.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +68,6 @@
 		169362B91E4FBBB500F9B79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		169362BE1E4FBBB500F9B79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169362C01E4FBBB500F9B79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		169362C61E4FC25500F9B79B /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		9020C04B1E9B32EF00402B9D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9020C04D1E9B33B200402B9D /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		9020C0511E9B33EB00402B9D /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
@@ -125,11 +119,7 @@
 		9020C0A81E9B394100402B9D /* peelsalmon.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = peelsalmon.mp4; sourceTree = "<group>"; };
 		9020C0A91E9B394100402B9D /* pinnapple.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinnapple.mp4; sourceTree = "<group>"; };
 		9020C0B61E9B39CD00402B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
-		908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		909F16C91E50B327009FC2C4 /* CookBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookBook.swift; sourceTree = "<group>"; };
-		909F16CB1E50B33C009FC2C4 /* Share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +171,6 @@
 				9020C04F1E9B33CA00402B9D /* model */,
 				9020C0501E9B33E100402B9D /* view */,
 				9020C0531E9B340700402B9D /* controller */,
-				908BC4E51E8CB24600AB2380 /* Testcases */,
 			);
 			path = Bundled;
 			sourceTree = "<group>";
@@ -244,18 +233,6 @@
 				9020C0541E9B341800402B9D /* FeaturedBundlesController.swift */,
 			);
 			name = controller;
-			sourceTree = "<group>";
-		};
-		908BC4E51E8CB24600AB2380 /* Testcases */ = {
-			isa = PBXGroup;
-			children = (
-				169362C61E4FC25500F9B79B /* IntroViewController.swift */,
-				909F16C91E50B327009FC2C4 /* CookBook.swift */,
-				909F16CB1E50B33C009FC2C4 /* Share.swift */,
-				908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */,
-				908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */,
-			);
-			name = Testcases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,7 +321,6 @@
 			files = (
 				9020C04C1E9B32EF00402B9D /* AppDelegate.swift in Sources */,
 				9020C0711E9B35AB00402B9D /* videoCell6.swift in Sources */,
-				909F16CC1E50B33C009FC2C4 /* Share.swift in Sources */,
 				9020C0611E9B34FE00402B9D /* Preparation.swift in Sources */,
 				9020C07B1E9B363D00402B9D /* RecipeCollection.swift in Sources */,
 				9020C0831E9B366000402B9D /* RecipeStepCell1.swift in Sources */,
@@ -363,7 +339,6 @@
 				9020C04E1E9B33B200402B9D /* Models.swift in Sources */,
 				9020C0841E9B366000402B9D /* RecipeStepCell2.swift in Sources */,
 				9020C09B1E9B37B100402B9D /* ReviewCell.swift in Sources */,
-				908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */,
 				9020C0551E9B341800402B9D /* FeaturedBundlesController.swift in Sources */,
 				9020C0851E9B366000402B9D /* RecipeStepCell3.swift in Sources */,
 				9020C05B1E9B344700402B9D /* ViewController.swift in Sources */,
@@ -371,7 +346,6 @@
 				9020C06B1E9B358F00402B9D /* videoCell3.swift in Sources */,
 				9020C0991E9B379B00402B9D /* SecondPage.swift in Sources */,
 				9020C0701E9B35AB00402B9D /* videoCell5.swift in Sources */,
-				169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */,
 				9020C0881E9B366000402B9D /* RecipeStepCell6.swift in Sources */,
 				9020C0911E9B371F00402B9D /* TimePriceCell.swift in Sources */,
 				9020C0951E9B376500402B9D /* RecipeStepCell.swift in Sources */,
@@ -380,11 +354,9 @@
 				9020C05D1E9B348D00402B9D /* TabBarController.swift in Sources */,
 				9020C09D1E9B37D200402B9D /* ShoppingList.swift in Sources */,
 				9020C0691E9B357700402B9D /* videoCell2.swift in Sources */,
-				908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */,
 				9020C0931E9B375000402B9D /* RecipeCell.swift in Sources */,
 				9020C0791E9B361D00402B9D /* RecipeController.swift in Sources */,
 				9020C09F1E9B391700402B9D /* BundleDetailController.swift in Sources */,
-				909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */,
 				9020C0771E9B360200402B9D /* AccountView.swift in Sources */,
 				9020C05F1E9B34AE00402B9D /* PreparationController.swift in Sources */,
 			);
