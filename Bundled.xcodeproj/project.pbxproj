@@ -29,6 +29,7 @@
 		9020C06F1E9B35AB00402B9D /* videoCell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C06C1E9B35AB00402B9D /* videoCell4.swift */; };
 		9020C0701E9B35AB00402B9D /* videoCell5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C06D1E9B35AB00402B9D /* videoCell5.swift */; };
 		9020C0711E9B35AB00402B9D /* videoCell6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C06E1E9B35AB00402B9D /* videoCell6.swift */; };
+		9020C0731E9B35C000402B9D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0721E9B35C000402B9D /* TestViewController.swift */; };
 		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
 		908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */; };
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		9020C06C1E9B35AB00402B9D /* videoCell4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoCell4.swift; sourceTree = "<group>"; };
 		9020C06D1E9B35AB00402B9D /* videoCell5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoCell5.swift; sourceTree = "<group>"; };
 		9020C06E1E9B35AB00402B9D /* videoCell6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoCell6.swift; sourceTree = "<group>"; };
+		9020C0721E9B35C000402B9D /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
 		908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		9020C0531E9B340700402B9D /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				9020C0721E9B35C000402B9D /* TestViewController.swift */,
 				9020C05E1E9B34AE00402B9D /* PreparationController.swift */,
 				9020C05C1E9B348D00402B9D /* TabBarController.swift */,
 				9020C0561E9B341F00402B9D /* BundleDetailController.swift */,
@@ -246,6 +249,7 @@
 				9020C06F1E9B35AB00402B9D /* videoCell4.swift in Sources */,
 				9020C0631E9B351500402B9D /* User.swift in Sources */,
 				9020C0591E9B343900402B9D /* Ingredients.swift in Sources */,
+				9020C0731E9B35C000402B9D /* TestViewController.swift in Sources */,
 				9020C04E1E9B33B200402B9D /* Models.swift in Sources */,
 				908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */,
 				9020C0551E9B341800402B9D /* FeaturedBundlesController.swift in Sources */,
