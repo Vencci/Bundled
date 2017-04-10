@@ -51,6 +51,16 @@
 		9020C09B1E9B37B100402B9D /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C09A1E9B37B100402B9D /* ReviewCell.swift */; };
 		9020C09D1E9B37D200402B9D /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C09C1E9B37D200402B9D /* ShoppingList.swift */; };
 		9020C09F1E9B391700402B9D /* BundleDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C09E1E9B391700402B9D /* BundleDetailController.swift */; };
+		9020C0AA1E9B395800402B9D /* beans.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A01E9B394100402B9D /* beans.mp4 */; };
+		9020C0AB1E9B395900402B9D /* beategg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A11E9B394100402B9D /* beategg.mp4 */; };
+		9020C0AC1E9B395900402B9D /* beef.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A21E9B394100402B9D /* beef.mp4 */; };
+		9020C0AD1E9B395900402B9D /* carrot.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A31E9B394100402B9D /* carrot.mp4 */; };
+		9020C0AE1E9B395900402B9D /* cutbean.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A41E9B394100402B9D /* cutbean.mp4 */; };
+		9020C0AF1E9B395900402B9D /* cutbroccoli.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A51E9B394100402B9D /* cutbroccoli.mp4 */; };
+		9020C0B01E9B395900402B9D /* cutonion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A61E9B394100402B9D /* cutonion.mp4 */; };
+		9020C0B11E9B395900402B9D /* cutpotato.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A71E9B394100402B9D /* cutpotato.mp4 */; };
+		9020C0B21E9B395900402B9D /* peelsalmon.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A81E9B394100402B9D /* peelsalmon.mp4 */; };
+		9020C0B31E9B395900402B9D /* pinnapple.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9020C0A91E9B394100402B9D /* pinnapple.mp4 */; };
 		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
 		908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */; };
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
@@ -105,6 +115,16 @@
 		9020C09A1E9B37B100402B9D /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		9020C09C1E9B37D200402B9D /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
 		9020C09E1E9B391700402B9D /* BundleDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleDetailController.swift; sourceTree = "<group>"; };
+		9020C0A01E9B394100402B9D /* beans.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = beans.mp4; sourceTree = "<group>"; };
+		9020C0A11E9B394100402B9D /* beategg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = beategg.mp4; sourceTree = "<group>"; };
+		9020C0A21E9B394100402B9D /* beef.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = beef.mp4; sourceTree = "<group>"; };
+		9020C0A31E9B394100402B9D /* carrot.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = carrot.mp4; sourceTree = "<group>"; };
+		9020C0A41E9B394100402B9D /* cutbean.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cutbean.mp4; sourceTree = "<group>"; };
+		9020C0A51E9B394100402B9D /* cutbroccoli.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cutbroccoli.mp4; sourceTree = "<group>"; };
+		9020C0A61E9B394100402B9D /* cutonion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cutonion.mp4; sourceTree = "<group>"; };
+		9020C0A71E9B394100402B9D /* cutpotato.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cutpotato.mp4; sourceTree = "<group>"; };
+		9020C0A81E9B394100402B9D /* peelsalmon.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = peelsalmon.mp4; sourceTree = "<group>"; };
+		9020C0A91E9B394100402B9D /* pinnapple.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinnapple.mp4; sourceTree = "<group>"; };
 		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
 		908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +146,16 @@
 		169362A81E4FBBB500F9B79B = {
 			isa = PBXGroup;
 			children = (
+				9020C0A01E9B394100402B9D /* beans.mp4 */,
+				9020C0A11E9B394100402B9D /* beategg.mp4 */,
+				9020C0A21E9B394100402B9D /* beef.mp4 */,
+				9020C0A31E9B394100402B9D /* carrot.mp4 */,
+				9020C0A41E9B394100402B9D /* cutbean.mp4 */,
+				9020C0A51E9B394100402B9D /* cutbroccoli.mp4 */,
+				9020C0A61E9B394100402B9D /* cutonion.mp4 */,
+				9020C0A71E9B394100402B9D /* cutpotato.mp4 */,
+				9020C0A81E9B394100402B9D /* peelsalmon.mp4 */,
+				9020C0A91E9B394100402B9D /* pinnapple.mp4 */,
 				169362B31E4FBBB500F9B79B /* Bundled */,
 				169362B21E4FBBB500F9B79B /* Products */,
 				169362B81E4FBBB500F9B79B /* Main.storyboard */,
@@ -288,6 +318,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9020C0AA1E9B395800402B9D /* beans.mp4 in Resources */,
+				9020C0AB1E9B395900402B9D /* beategg.mp4 in Resources */,
+				9020C0AC1E9B395900402B9D /* beef.mp4 in Resources */,
+				9020C0AD1E9B395900402B9D /* carrot.mp4 in Resources */,
+				9020C0AE1E9B395900402B9D /* cutbean.mp4 in Resources */,
+				9020C0AF1E9B395900402B9D /* cutbroccoli.mp4 in Resources */,
+				9020C0B01E9B395900402B9D /* cutonion.mp4 in Resources */,
+				9020C0B11E9B395900402B9D /* cutpotato.mp4 in Resources */,
+				9020C0B21E9B395900402B9D /* peelsalmon.mp4 in Resources */,
+				9020C0B31E9B395900402B9D /* pinnapple.mp4 in Resources */,
 				169362BF1E4FBBB500F9B79B /* LaunchScreen.storyboard in Resources */,
 				169362BC1E4FBBB500F9B79B /* Assets.xcassets in Resources */,
 				169362BA1E4FBBB500F9B79B /* Main.storyboard in Resources */,
