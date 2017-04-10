@@ -50,6 +50,7 @@
 		9020C0971E9B378000402B9D /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0961E9B378000402B9D /* DescriptionCell.swift */; };
 		9020C0991E9B379B00402B9D /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0981E9B379B00402B9D /* SecondPage.swift */; };
 		9020C09B1E9B37B100402B9D /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C09A1E9B37B100402B9D /* ReviewCell.swift */; };
+		9020C09D1E9B37D200402B9D /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C09C1E9B37D200402B9D /* ShoppingList.swift */; };
 		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
 		908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */; };
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
@@ -103,6 +104,7 @@
 		9020C0961E9B378000402B9D /* DescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
 		9020C0981E9B379B00402B9D /* SecondPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
 		9020C09A1E9B37B100402B9D /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		9020C09C1E9B37D200402B9D /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
 		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
 		908BC4EA1E8CB2BD00AB2380 /* AppStoreUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		9020C0531E9B340700402B9D /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				9020C09C1E9B37D200402B9D /* ShoppingList.swift */,
 				9020C08E1E9B36AE00402B9D /* Login.swift */,
 				9020C0981E9B379B00402B9D /* SecondPage.swift */,
 				9020C0781E9B361D00402B9D /* RecipeController.swift */,
@@ -336,6 +339,7 @@
 				9020C0751E9B35DE00402B9D /* Recipe.swift in Sources */,
 				9020C0861E9B366000402B9D /* RecipeStepCell4.swift in Sources */,
 				9020C05D1E9B348D00402B9D /* TabBarController.swift in Sources */,
+				9020C09D1E9B37D200402B9D /* ShoppingList.swift in Sources */,
 				9020C0691E9B357700402B9D /* videoCell2.swift in Sources */,
 				908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */,
 				9020C0931E9B375000402B9D /* RecipeCell.swift in Sources */,
