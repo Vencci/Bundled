@@ -14,7 +14,6 @@
 		901391411E50C57C00ABD3C5 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901391401E50C57C00ABD3C5 /* ShoppingViewController.swift */; };
 		908BC4DB1E8CAEF200AB2380 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4DA1E8CAEF200AB2380 /* Models.swift */; };
 		908BC4DD1E8CAF3B00AB2380 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */; };
-		908BC4DF1E8CAF8000AB2380 /* AppDelegate1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4DE1E8CAF8000AB2380 /* AppDelegate1.swift */; };
 		908BC4E11E8CB02D00AB2380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E01E8CB02D00AB2380 /* ViewController.swift */; };
 		908BC4E41E8CB10600AB2380 /* BundleClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E31E8CB10600AB2380 /* BundleClasses.swift */; };
 		908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */; };
@@ -48,7 +47,6 @@
 		901391401E50C57C00ABD3C5 /* ShoppingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		908BC4DA1E8CAEF200AB2380 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
-		908BC4DE1E8CAF8000AB2380 /* AppDelegate1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate1.swift; sourceTree = "<group>"; };
 		908BC4E01E8CB02D00AB2380 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		908BC4E31E8CB10600AB2380 /* BundleClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleClasses.swift; sourceTree = "<group>"; };
 		908BC4E81E8CB2B000AB2380 /* AppStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				908BC4F31E8D4C6000AB2380 /* prep_and _recipes_cz */,
 				908BC4E21E8CB0E200AB2380 /* models */,
 				908BC4DC1E8CAF3B00AB2380 /* CategoryCell.swift */,
-				908BC4DE1E8CAF8000AB2380 /* AppDelegate1.swift */,
 				908BC4E01E8CB02D00AB2380 /* ViewController.swift */,
 				908BC4EC1E8CB52900AB2380 /* BundleDetailController.swift */,
 				908BC4FC1E8D782900AB2380 /* ViewController2.swift */,
@@ -261,7 +258,6 @@
 				908BC4FD1E8D782900AB2380 /* ViewController2.swift in Sources */,
 				908BC4EB1E8CB2BD00AB2380 /* AppStoreUITests.swift in Sources */,
 				90DA0BE11E93FE0C001A26C5 /* VideoCell.swift in Sources */,
-				908BC4DF1E8CAF8000AB2380 /* AppDelegate1.swift in Sources */,
 				169362C71E4FC25500F9B79B /* IntroViewController.swift in Sources */,
 				908BC4E91E8CB2B000AB2380 /* AppStoreTests.swift in Sources */,
 				909F16CA1E50B327009FC2C4 /* CookBook.swift in Sources */,
