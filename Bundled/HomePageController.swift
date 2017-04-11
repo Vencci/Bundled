@@ -23,8 +23,13 @@ var myUser = User(numPeople: 1, numMeals: 1, dietaryRestrictions: [""])
 
 var test: Int?
 
-class SecondPage: UIViewController {
+class HomepageController: UIViewController {
     
+    var bundle: Bundles? {
+        didSet {
+            ImageButton.setImage(UIImage(named: (bundle?.imageName)!), for: .normal)
+        }
+    }
     
     let BgImage: UIImageView = {
         let theImageView = UIImageView()
@@ -176,7 +181,7 @@ class SecondPage: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SecondPage.dismissKeyboard))
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(HomepageController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
         //add background
@@ -190,8 +195,8 @@ class SecondPage: UIViewController {
         //add blur view
         
         //view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector(("dismissKeyboardFromView:"))))
-
-
+        
+        
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
         blurEffectView = UIVisualEffectView(effect: blurEffect)//这有问题想办法放到外面
         blurEffectView.frame = view.bounds
@@ -303,9 +308,9 @@ class SecondPage: UIViewController {
     
     func setUpImageButton() {
         ImageButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        ImageButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        ImageButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -100).isActive = true
-        ImageButton.heightAnchor.constraint(equalTo: view.widthAnchor, constant: -100).isActive = true
+        ImageButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: +110).isActive = true
+        ImageButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -80).isActive = true
+        ImageButton.heightAnchor.constraint(equalTo: view.widthAnchor, constant: -80).isActive = true
     }
     
     func setupPopButton() {
@@ -325,8 +330,10 @@ class SecondPage: UIViewController {
     }
     
     func goToBundle(){
-        //let layout =  UICollectionViewFlowLayout()
-        let newMessageController = TabBarController()
+        let layout =  UICollectionViewFlowLayout()
+        //let newMessageController = RecipeController(collectionViewLayout: layout)
+        let newMessageController = ShoppingListController()
+        newMessageController.bundle = self.bundle
         let navController = UINavigationController(rootViewController: newMessageController)
         present(navController, animated: true, completion: nil)
     }

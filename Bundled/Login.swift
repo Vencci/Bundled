@@ -40,13 +40,13 @@ class LoginViewController: UIViewController {
     }
     
     func handleLogin() {
-        let newMessageController = SecondPage()
+        let newMessageController = HomepageController()
         let navController = UINavigationController(rootViewController: newMessageController)
         present(navController, animated: true, completion: nil)
     }
     //调用register按键激活firebase
     func handleRegister() {
-        let newMessageController = SecondPage()
+        let newMessageController = HomepageController()
         let navController = UINavigationController(rootViewController: newMessageController)
         present(navController, animated: true, completion: nil)
     }

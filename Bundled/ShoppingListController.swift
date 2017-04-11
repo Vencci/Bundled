@@ -8,8 +8,20 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
-    var foods = [Ingredients]()
+class ShoppingListController: UITableViewController {
+    
+    var bundle: Bundles? {
+        didSet{
+            for item in (bundle?.ingredients)!{
+                ingredientsArray.append(item.key.lowercased())
+                quantitiesArray.append(item.value)
+            }
+        }
+    }
+    
+    var ingredientsArray = [String]()
+    var quantitiesArray = [(Float, String)]()
+    
     func animateTable() {
         tableView.reloadData()
         let cells = tableView.visibleCells
@@ -31,7 +43,6 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        foods = Ingredients.sampleIngreArray()
         let title: UILabel = UILabel.init(frame: CGRect(x:0, y:0, width:tableView.bounds.width, height:50))
         title.text = "Shopping List"
         title.textColor = UIColor(red: 77.0/255.0, green: 98.0/255.0, blue: 130.0/255.0, alpha: 1.0)
@@ -48,32 +59,36 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return foods.count
+        return (bundle?.ingredients!.count)!
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "ShopCell", for: indexPath) as! ShoppingListCell
+
+        //cell.ingredients = self.bundle?.ingredients[indexPath.item]
         let cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "myIdentifier")
-        let row = indexPath.row
-        // foods = instance.ingredients!
-        let food = foods[row]
-        cell.textLabel?.text = food.title
-        cell.detailTextLabel?.text = food.content
+        
+        let foodItem = ingredientsArray[indexPath.row]
+        let itemQuantity = "\(quantitiesArray[indexPath.row].0) " + quantitiesArray[indexPath.row].1
+        
+        cell.textLabel?.text = itemQuantity + " of " + foodItem
+        
+        //cell.detailTextLabel?.text = quantitiesArray[indexPath.row].1
+        /*
         if food.completed{
             cell.accessoryType = .checkmark
         }
         else{
             cell.accessoryType = .none
-        }
+        }*/
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         
-        let tappedItem:  Ingredients = self.foods[indexPath.row] as Ingredients
+        //let tappedItem:  Ingredients = self.foods[indexPath.row] as Ingredients
         
-        tappedItem.completed = !tappedItem.completed
+        //tappedItem.completed = !tappedItem.completed
         
         tableView.reloadData()
     }

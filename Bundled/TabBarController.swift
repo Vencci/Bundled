@@ -25,7 +25,7 @@ class TabBarController: UITabBarController {
         let preparationController = PreparationController(collectionViewLayout: layout)
         preparationController.bundle = bundle
         
-        let shoppingController = ViewController()
+        let shoppingController = ShoppingListController()
         let viewController1 = UINavigationController(rootViewController: shoppingController)
         viewController1.tabBarItem.title = "shopping"
         viewController1.tabBarItem.image = UIImage(named: "shoppingcart29")

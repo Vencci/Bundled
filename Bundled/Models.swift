@@ -112,6 +112,7 @@ class BundleCategory: NSObject{
         firstFeaturedBundle.cookTime = firstFeaturedBundle.sumCookTime(recipes: firstFeaturedBundle.recipes!)
         firstFeaturedBundle.totalTime = firstFeaturedBundle.prepTime! + firstFeaturedBundle.cookTime!
         firstFeaturedBundle.preperations = firstFeaturedBundle.allPreperations(bundle: firstFeaturedBundle)
+        firstFeaturedBundle.ingredients = firstFeaturedBundle.allIngredients(bundle: firstFeaturedBundle)
 
         bannerBundles.append(firstFeaturedBundle)
         
@@ -125,6 +126,7 @@ class BundleCategory: NSObject{
         secondFeaturedBundle.cookTime = secondFeaturedBundle.sumCookTime(recipes: secondFeaturedBundle.recipes!)
         secondFeaturedBundle.totalTime = secondFeaturedBundle.prepTime! + secondFeaturedBundle.cookTime!
         secondFeaturedBundle.preperations = secondFeaturedBundle.allPreperations(bundle: secondFeaturedBundle)
+        secondFeaturedBundle.ingredients = secondFeaturedBundle.allIngredients(bundle: secondFeaturedBundle)
 
         bannerBundles.append(secondFeaturedBundle)
         
@@ -138,6 +140,7 @@ class BundleCategory: NSObject{
         thirdFeaturedBundle.cookTime = thirdFeaturedBundle.sumCookTime(recipes: thirdFeaturedBundle.recipes!)
         thirdFeaturedBundle.totalTime = thirdFeaturedBundle.prepTime! + thirdFeaturedBundle.cookTime!
         thirdFeaturedBundle.preperations = thirdFeaturedBundle.allPreperations(bundle: thirdFeaturedBundle)
+        thirdFeaturedBundle.ingredients = thirdFeaturedBundle.allIngredients(bundle: thirdFeaturedBundle)
 
         bannerBundles.append(thirdFeaturedBundle)
         
@@ -162,6 +165,7 @@ class BundleCategory: NSObject{
         oneoneBundle.cookTime = oneoneBundle.sumCookTime(recipes: oneoneBundle.recipes!)
         oneoneBundle.totalTime = oneoneBundle.prepTime! + oneoneBundle.cookTime!
         oneoneBundle.preperations = oneoneBundle.allPreperations(bundle: oneoneBundle)
+        oneoneBundle.ingredients = oneoneBundle.allIngredients(bundle: oneoneBundle)
         bundles.append(oneoneBundle)
 
         let onetwoBundle = Bundles()
@@ -174,7 +178,7 @@ class BundleCategory: NSObject{
         onetwoBundle.cookTime = onetwoBundle.sumCookTime(recipes: onetwoBundle.recipes!)
         onetwoBundle.totalTime = onetwoBundle.prepTime! + onetwoBundle.cookTime!
         onetwoBundle.preperations = onetwoBundle.allPreperations(bundle: onetwoBundle)
-
+        onetwoBundle.ingredients = onetwoBundle.allIngredients(bundle: onetwoBundle)
         bundles.append(onetwoBundle)
         
         let onethreeBundle = Bundles()
@@ -187,6 +191,7 @@ class BundleCategory: NSObject{
         onethreeBundle.cookTime = onethreeBundle.sumCookTime(recipes: onethreeBundle.recipes!)
         onethreeBundle.totalTime = onethreeBundle.prepTime! + onethreeBundle.cookTime!
         onethreeBundle.preperations = onethreeBundle.allPreperations(bundle: onethreeBundle)
+        onethreeBundle.ingredients = onethreeBundle.allIngredients(bundle: onethreeBundle)
         bundles.append(onethreeBundle)
 
         bestNewBundlesCategory.bundles = bundles
@@ -209,7 +214,8 @@ class BundleCategory: NSObject{
         twoooneBundle.prepTime = twoooneBundle.sumPrepTime(recipes: twoooneBundle.recipes!)
         twoooneBundle.cookTime = twoooneBundle.sumCookTime(recipes: twoooneBundle.recipes!)
         twoooneBundle.totalTime = twoooneBundle.prepTime! + twoooneBundle.cookTime!
-        onethreeBundle.preperations = onethreeBundle.allPreperations(bundle: twoooneBundle)
+        twoooneBundle.preperations = twoooneBundle.allPreperations(bundle: twoooneBundle)
+        twoooneBundle.ingredients = twoooneBundle.allIngredients(bundle: twoooneBundle)
 
         vegetarianBundles.append(twoooneBundle)
         

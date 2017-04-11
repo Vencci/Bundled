@@ -40,7 +40,7 @@ class User: NSObject {
             let recipe = restrictedRecipes.randomElement()
             var dict = recipe?.ingredients
             for (key, value) in (recipe?.ingredients)!{
-                dict?.updateValue((value.0 * user.numPeople!, value.1), forKey: key)
+                dict?.updateValue((value.0 * Float(user.numPeople!), value.1), forKey: key)
             }
             pickedRecipes.append(recipe!)
             idx = idx + 1

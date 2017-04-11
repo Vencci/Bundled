@@ -19,6 +19,7 @@ class Bundles: NSObject {
     var totalTime: Int?
     var recipes: [Recipe]?
     var preperations: [Preparation]?
+    var ingredients: [String:(Float, String)]?
 
     
     func sumPrice(recipes: [Recipe]) -> Float {
@@ -58,4 +59,21 @@ class Bundles: NSObject {
         }
         return preperations
     }
+    
+    func allIngredients(bundle: Bundles) -> [String:(Float, String)] {
+        var ingredients = [String: (Float, String)]()
+        for recipe in bundle.recipes! {
+            for item in recipe.ingredients{
+                if ingredients[item.key] == nil {
+                    ingredients[item.key] = item.value
+                }
+                else {
+                    ingredients[item.key]?.0 += item.value.0
+                }
+            }
+        }
+        return ingredients
+    }
 }
+
+

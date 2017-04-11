@@ -30,7 +30,7 @@ class BundleDetailController: UICollectionViewController,UICollectionViewDelegat
         super.viewDidLoad()
         
         print((bundle?.name)! + " printed in bundle detail view did load")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "PREP NOW!", style: .plain, target: self, action: #selector(GoToTabbar))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(GoToTabbar))
         
         collectionView?.alwaysBounceVertical = true
         collectionView?.backgroundColor = UIColor.white
@@ -47,10 +47,16 @@ class BundleDetailController: UICollectionViewController,UICollectionViewDelegat
     func showBundleDetailTabBarForBundle(bundle: Bundles) {
         let layout = UICollectionViewFlowLayout()
         let tabbarController = TabBarController()
-        tabbarController.bundle = bundle
+        tabbarController.bundle = self.bundle
         let preparationController = PreparationController(collectionViewLayout: layout)
         preparationController.bundle = bundle
-        navigationController?.pushViewController(tabbarController, animated: true)
+        let recipeController = RecipeController(collectionViewLayout: layout)
+        recipeController.bundle = self.bundle
+        let homepageController = HomepageController()
+        homepageController.bundle = self.bundle
+        let shoppingListController = ShoppingListController()
+        shoppingListController.bundle = self.bundle
+        navigationController?.pushViewController(homepageController, animated: true)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -196,18 +202,4 @@ extension UIView {
     }
 }
 
-class BaseCell: UICollectionViewCell {
-    override init(frame: CGRect) {
-        super.init(frame:frame)
-        setupViews()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func setupViews() {
-        
-    }
-}
 

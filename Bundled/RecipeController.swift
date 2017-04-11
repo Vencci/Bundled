@@ -15,16 +15,17 @@ class RecipeController: UICollectionViewController, UICollectionViewDelegateFlow
     var bundle: Bundles? {
         didSet {
             //navigationItem.title = bundle?.name
-            print(bundle?.name ?? "nothing passed to bundle in preparation controller")
+            print(bundle?.name ?? "nothing passed to bundle in recipe controller")
         }
     }
     let cellID = "cellID1"
+    let headerId = "headerId"
+    let footerId = "footerId"
     var videoView = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //navigationItem.title = "Preparation"
-        print(bundle?.name ?? "nothing passee to viewdidload in preperation controller")
         
         navigationController?.navigationBar.isTranslucent = false
         let titleLable = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 32, height: view.frame.height))
@@ -36,17 +37,10 @@ class RecipeController: UICollectionViewController, UICollectionViewDelegateFlow
         navigationItem.leftBarButtonItem = backButton
         collectionView?.backgroundColor = UIColor.white
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellVideo")
+        collectionView?.register(RecipeHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
+        collectionView?.register(RecipeFooter.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: footerId)
         
-        collectionView?.register(RecipeStepCell1.self, forCellWithReuseIdentifier: "cellID1")
-        collectionView?.register(RecipeStepCell2.self, forCellWithReuseIdentifier: "cellID2")
-        collectionView?.register(RecipeStepCell3.self, forCellWithReuseIdentifier: "cellID3")
-        collectionView?.register(RecipeStepCell4.self, forCellWithReuseIdentifier: "cellID4")
-        collectionView?.register(RecipeStepCell5.self, forCellWithReuseIdentifier: "cellID5")
-        collectionView?.register(RecipeStepCell6.self, forCellWithReuseIdentifier: "cellID6")
-        collectionView?.register(RecipeStepCell7.self, forCellWithReuseIdentifier: "cellID7")
-        collectionView?.register(RecipeStepCell8.self, forCellWithReuseIdentifier: "cellID8")
-        collectionView?.register(RecipeStepCell9.self, forCellWithReuseIdentifier: "cellID9")
-
+        collectionView?.register(RecipeStepCell.self, forCellWithReuseIdentifier: cellID)
         
         //collectionView?.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header")
         // Do any additional setup after loading the view, typically from a nib.
@@ -59,70 +53,22 @@ class RecipeController: UICollectionViewController, UICollectionViewDelegateFlow
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 4
+        return (bundle?.recipes?.count)!
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return (bundle?.recipes![section].steps.count)!
     }
-
+    
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if indexPath.section == 0 {
-            switch indexPath.item {
-            case 0:
-                let videoCell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "cellID1", for: indexPath) as! RecipeStepCell1
-                return videoCell1
-            case 1:
-                let videoCell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "cellID2", for: indexPath) as! RecipeStepCell2
-                return videoCell2
-            default:
-                return collectionView.dequeueReusableCell(withReuseIdentifier: "cellID1", for: indexPath) as! RecipeStepCell1
-        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! RecipeStepCell
+        if let recipeStep = bundle?.recipes?[indexPath.section].steps[indexPath.item] {
+            cell.recipeStep = recipeStep
+            cell.recipe = bundle?.recipes?[indexPath.section]
         }
         
-        if indexPath.section == 1 {
-            switch indexPath.item {
-            case 0:
-                let videoCell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "cellID3", for: indexPath) as! RecipeStepCell3
-                return videoCell1
-            case 1:
-                let videoCell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "cellID4", for: indexPath) as! RecipeStepCell4
-                return videoCell2
-            case 2:
-                let videoCell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "cellID5", for: indexPath) as! RecipeStepCell5
-                return videoCell3
-            default:
-                return collectionView.dequeueReusableCell(withReuseIdentifier: "cellID1", for: indexPath) as! RecipeStepCell1
-        }
-        }
-        
-        if indexPath.section == 2 {
-            switch indexPath.item {
-            case 0:
-                let videoCell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "cellID6", for: indexPath) as! RecipeStepCell6
-                return videoCell1
-            case 1:
-                let videoCell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "cellID7", for: indexPath) as! RecipeStepCell7
-                return videoCell2
-            default:
-                return collectionView.dequeueReusableCell(withReuseIdentifier: "cellID1", for: indexPath) as! RecipeStepCell1
-            }
-        }
-        
-        if indexPath.section == 3 {
-            switch indexPath.item {
-            case 0:
-                let videoCell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "cellID8", for: indexPath) as! RecipeStepCell8
-                return videoCell1
-            case 1:
-                let videoCell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "cellID9", for: indexPath) as! RecipeStepCell9
-                return videoCell2
-            default:
-                return collectionView.dequeueReusableCell(withReuseIdentifier: "cellID1", for: indexPath) as! RecipeStepCell1
-            }
-        }
-        return collectionView.dequeueReusableCell(withReuseIdentifier: "cellID1", for: indexPath) as! RecipeStepCell1
+        return cell
     }
     
     
@@ -130,13 +76,98 @@ class RecipeController: UICollectionViewController, UICollectionViewDelegateFlow
         let h = (view.frame.width - 16 - 16) * 3 / 4
         return CGSize(width: view.frame.width, height: h + 200)
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
+    
+    //set header size
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width:view.frame.width, height:100)
+    }
+    
+    //deque header cell
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionElementKindSectionHeader {
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId, for: indexPath) as! RecipeHeader
+            header.recipe = bundle?.recipes?[indexPath.section]
+            return header}
+        else {
+            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionFooter, withReuseIdentifier: footerId, for: indexPath) as! RecipeFooter
+            return footer
+        }
+        
+    }
+    
+    //set footer size
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return CGSize(width: view.frame.width, height: 20)
+    }
+    
 }
 
+class RecipeHeader: BaseCell{
     
+    let cellId = "bannerCellId"
+    
+    var recipe: Recipe? {
+        didSet {
+            if let name = recipe?.name{
+                recipeLabel.text = name
+            }
+        }
+    }
+    
+    let recipeLabel: UILabel = {
+        let label = UILabel()
+        //label.font = UIFont.boldSystemFont(ofSize: 30)
+        label.textColor = UIColor.black
+        label.backgroundColor = UIColor(white: 1, alpha: 0.8)
+        label.textAlignment = NSTextAlignment.center
+        label.adjustsFontSizeToFitWidth = true
+        label.textAlignment = .center
+        label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 30)
+        label.numberOfLines = 2
+        return label
+    }()
+    
+    
+    override func setupViews() {
+        super.setupViews()
+        //addSubview(segmentedControl)
+        addSubview(recipeLabel)
+        
+        //bundleLabel.centerXAnchor.constraint(equalTo: bundleLabel.superview!.centerXAnchor).isActive = true
+        
+        
+        addConstraintsWithFormat(format: "V:|[v0(40)]", views: recipeLabel)
+        addConstraintsWithFormat(format: "H:|[v0]|", views: recipeLabel)
+    }
+}
 
+class RecipeFooter: BaseCell{
+    
+    let cellId = "footerCellId"
 
+    let separatorLine: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.black
+        view.alpha = 0
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    override func setupViews() {
+        super.setupViews()
+        //addSubview(segmentedControl)
+        addSubview(separatorLine)
+        
+        //bundleLabel.centerXAnchor.constraint(equalTo: bundleLabel.superview!.centerXAnchor).isActive = true
+        
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0" : separatorLine]))
+        
+        addConstraintsWithFormat(format: "V:[v0(10)]|", views: separatorLine)
+        
 
-
+    }
+}

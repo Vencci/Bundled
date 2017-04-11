@@ -17,11 +17,11 @@ class Recipe: NSObject {
     var price:Float
     var cookTime: Int
     var tag: [String]
-    var ingredients: [String:(Int, String)]
+    var ingredients: [String:(Float, String)]
     var steps: [(String, String)]
     var details: String
     
-    init(id: NSNumber, name: String, category: String, preparationArray: [Preparation], imageName: String, price: Float, cookTime: Int, tag: [String], ingredients: [String:(Int, String)],steps:[(String, String)], details: String) {
+    init(id: NSNumber, name: String, category: String, preparationArray: [Preparation], imageName: String, price: Float, cookTime: Int, tag: [String], ingredients: [String:(Float, String)],steps:[(String, String)], details: String) {
         self.id = id
         self.name = name
         self.category = category
