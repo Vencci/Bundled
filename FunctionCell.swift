@@ -124,7 +124,7 @@ class FunctionCell: BaseCell, UICollectionViewDelegate, UICollectionViewDataSour
             
             addConstraintsWithFormat(format: "H:|-5-[v0(40)]", views: imageView)
             addConstraintsWithFormat(format: "H:|[v0]|", views: titleLabel)
-            addConstraintsWithFormat(format: "V:|[v0(40)]-10-[v1]|", views: imageView, titleLabel)
+            addConstraintsWithFormat(format: "V:|[v0(40)]-5-[v1]|", views: imageView, titleLabel)
             
         }
     }
