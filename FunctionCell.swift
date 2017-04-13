@@ -10,7 +10,7 @@ import UIKit
 
 class FunctionCell: BaseCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
-    let functionImageArray: [UIImage] = [#imageLiteral(resourceName: "ShoppingCart"), #imageLiteral(resourceName: "Knife"), #imageLiteral(resourceName: "CookingPot")]
+    let functionImageArray: [UIImage] = [#imageLiteral(resourceName: "Shopping Cart"), #imageLiteral(resourceName: "Restaurant"), #imageLiteral(resourceName: "Cooking Pot")]
     let functionArray = ["Shop", "Prepare", "Cook"]
     
     var bundleDetailController: BundleDetailController?
@@ -75,7 +75,7 @@ class FunctionCell: BaseCell, UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        return UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -122,9 +122,9 @@ class FunctionCell: BaseCell, UICollectionViewDelegate, UICollectionViewDataSour
             addSubview(imageView)
             addSubview(titleLabel)
             
-            addConstraintsWithFormat(format: "H:|-5-[v0(40)]", views: imageView)
-            addConstraintsWithFormat(format: "H:|[v0]|", views: titleLabel)
-            addConstraintsWithFormat(format: "V:|[v0(40)]-5-[v1]|", views: imageView, titleLabel)
+            addConstraintsWithFormat(format: "H:|-25-[v0(60)]", views: imageView)
+            addConstraintsWithFormat(format: "H:|-25-[v0]|", views: titleLabel)
+            addConstraintsWithFormat(format: "V:|[v0(60)]-5-[v1]|", views: imageView, titleLabel)
             
         }
     }
