@@ -8,7 +8,11 @@
 
 import UIKit
 
-class Bundles: NSObject {
+class Bundles: NSObject, NSCoding {
+    
+    static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("BundlesInfoFile")
+    
     var id: NSNumber?
     var name: String?
     var category: String?
@@ -20,7 +24,37 @@ class Bundles: NSObject {
     var recipes: [Recipe]?
     var preperations: [Preparation]?
     var ingredients: [String:(Float, String)]?
+    
+    public required convenience init?(coder aDecoder: NSCoder) {
+        let id = aDecoder.decodeObject(forKey: "id") as? NSNumber?
+        let name = aDecoder.decodeObject(forKey: "name") as? String?
+        let category = aDecoder.decodeObject(forKey: "category") as? String?
+        let imageName = aDecoder.decodeObject(forKey: "imageName") as? String?
+        let price = aDecoder.decodeObject(forKey: "price") as? Float
+        let cookTime = aDecoder.decodeObject(forKey: "cookTime") as? Int?
+        let prepTime = aDecoder.decodeObject(forKey: "prepTime") as? Int?
+        let totolTime = aDecoder.decodeObject(forKey: "totalTime") as? Int?
+        let recipes = aDecoder.decodeObject(forKey: "recipes") as? [Recipe]?
+        let preperations = aDecoder.decodeObject(forKey: "preperations") as? [Preparation]?
+        let ingredients = aDecoder.decodeObject(forKey: "ingredients") as? [String:(Float, String)]?
+        self.init()
 
+    }
+    public func encode(with aCoder: NSCoder) {
+        aCoder.encode(id, forKey: "id")
+        aCoder.encode(name, forKey: "name")
+        aCoder.encode(category, forKey: "category")
+        aCoder.encode(imageName, forKey: "imageName")
+        aCoder.encode(price, forKey: "price")
+        aCoder.encode(cookTime, forKey: "cookTime")
+        aCoder.encode(prepTime, forKey: "prepTime")
+        aCoder.encode(totalTime, forKey: "totalTime")
+        aCoder.encode(recipes, forKey: "recipes")
+        aCoder.encode(preperations, forKey: "preperations")
+        aCoder.encode(ingredients, forKey: "ingredients")
+        
+    }
+    
     
     func sumPrice(recipes: [Recipe]) -> Float {
         var sum: Float = 0.00

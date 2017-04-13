@@ -79,13 +79,15 @@ class HomepageController: UIViewController {
         return addItemView
     }()
     var blurEffectView: UIVisualEffectView!
+    
     //Image Button
     lazy var ImageButton: UIButton = {
         let BundleImage = UIImage(named: "foodphoto") as UIImage?
         let button = UIButton(type: UIButtonType.custom) as UIButton
-        button.backgroundColor = UIColor(r: 80, g: 101, b: 161)
+        //button.backgroundColor = UIColor(r: 80, g: 101, b: 161)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(BundleImage, for: .normal)
+        print("processed button")
         button.addTarget(self, action: #selector(goToBundle), for: .touchUpInside)
         return button
     }()
@@ -221,6 +223,7 @@ class HomepageController: UIViewController {
             view.addSubview(titleLabel)
             setupTitleLabel()
             setUpImageButton()
+
         }
         if bundle?.name == nil {
             view.addSubview(emptyBundleLabel)
@@ -371,7 +374,6 @@ class HomepageController: UIViewController {
     
     func goToBundle(){
         let layout =  UICollectionViewFlowLayout()
-        //let newMessageController = RecipeController(collectionViewLayout: layout)
         let newMessageController = BundleDetailController(collectionViewLayout: layout)
         newMessageController.bundle = self.bundle
         let navController = UINavigationController(rootViewController: newMessageController)
