@@ -31,6 +31,34 @@ class HomepageController: UIViewController {
         }
     }
     
+    let titleLabel : UILabel = {
+        let iv = UILabel()
+        iv.contentMode = .scaleAspectFill
+        iv.clipsToBounds = true
+        iv.text = "Your bundle:"
+        iv.font = UIFont(name: "ChalkboardSE-Regular", size: 24)
+        iv.textColor = UIColor.white
+        //iv.backgroundColor = UIColor.gray
+        iv.numberOfLines = 1
+        iv.layer.cornerRadius = 0
+        return iv
+    }()
+    
+    let emptyBundleLabel: UILabel = {
+        let label = UILabel()
+        //label.font = UIFont.boldSystemFont(ofSize: 30)
+        label.textColor = UIColor.black
+        label.text = "Oops, your pandry is empty at this moment. Add your bundle of this week now!"
+        label.backgroundColor = UIColor(white: 1, alpha: 0.6)
+        label.adjustsFontSizeToFitWidth = true
+        label.textAlignment = .center
+        label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 30)
+        label.layer.masksToBounds = true
+        label.numberOfLines = 3
+        label.layer.cornerRadius = 10
+        return label
+    }()
+    
     let BgImage: UIImageView = {
         let theImageView = UIImageView()
         theImageView.contentMode = .scaleAspectFill
@@ -188,14 +216,16 @@ class HomepageController: UIViewController {
         view.addSubview(BgImage)
         someImageViewConstraints()
         //add bundle
-        view.addSubview(ImageButton)
-        setUpImageButton()
-        // view.addSubview(BundleImage)
-        // BundleImageViewConstraints()
-        //add blur view
-        
-        //view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector(("dismissKeyboardFromView:"))))
-        
+        if bundle?.name != nil {
+            view.addSubview(ImageButton)
+            view.addSubview(titleLabel)
+            setupTitleLabel()
+            setUpImageButton()
+        }
+        if bundle?.name == nil {
+            view.addSubview(emptyBundleLabel)
+            setupEmptyBundleLabel()
+        }
         
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
         blurEffectView = UIVisualEffectView(effect: blurEffect)//这有问题想办法放到外面
@@ -204,11 +234,7 @@ class HomepageController: UIViewController {
         view.addSubview(blurEffectView)
         effect = blurEffectView.effect
         blurEffectView.effect = nil
-        //button.addTarget(self, action: Selector("btnTouched:"), for:.touchUpInside)
-        //view.addSubview(button)
-        //setUpImageButton()
-        view.addSubview(ImageButton)
-        setUpImageButton()
+
         //naviagation bar
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Bundle", style: .plain, target: self, action: #selector(handlePopOver))
         
@@ -304,7 +330,21 @@ class HomepageController: UIViewController {
         BgImage.heightAnchor.constraint(equalTo:self.view.heightAnchor).isActive = true
     }
     
+    func setupEmptyBundleLabel() {
+        emptyBundleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        emptyBundleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant:+80).isActive = true
+        emptyBundleLabel.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -80).isActive = true
+        emptyBundleLabel.heightAnchor.constraint(equalTo: view.widthAnchor, constant: -80).isActive = true
+        emptyBundleLabel.translatesAutoresizingMaskIntoConstraints = false
+    }
     
+    func setupTitleLabel() {
+        titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -40).isActive = true
+        titleLabel.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -80).isActive = true
+        titleLabel.heightAnchor.constraint(equalTo: view.widthAnchor, constant: 100).isActive = true
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+    }
     
     func setUpImageButton() {
         ImageButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -332,7 +372,7 @@ class HomepageController: UIViewController {
     func goToBundle(){
         let layout =  UICollectionViewFlowLayout()
         //let newMessageController = RecipeController(collectionViewLayout: layout)
-        let newMessageController = ShoppingListController()
+        let newMessageController = BundleDetailController(collectionViewLayout: layout)
         newMessageController.bundle = self.bundle
         let navController = UINavigationController(rootViewController: newMessageController)
         present(navController, animated: true, completion: nil)
@@ -340,10 +380,6 @@ class HomepageController: UIViewController {
     
     func handlePopOver(){
         animateIn()
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //button 1: morning

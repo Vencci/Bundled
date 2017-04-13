@@ -22,7 +22,7 @@ class FeaturedBundlesController: UICollectionViewController, UICollectionViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Featured Bundles"
+        navigationItem.title = "Bundles for You"
         featuredBundles = BundleCategory.sampleBundleCategories().first
         bundleCategories = featuredBundles?.bundleCategories
         bannerCategory = featuredBundles?.bannerCategory

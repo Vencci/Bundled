@@ -20,6 +20,7 @@ class BundleDetailController: UICollectionViewController,UICollectionViewDelegat
     
     private let headerId = "headerId"
     private let TimePriceCellId = "TimePriceCellId"
+    private let FunctionCellId = "FunctionCellId"
     private let RecipeCellId = "RecipeCellId"
     private let DescriptionCellId = "DescriptionCellId"
     //private let ReviewCellId = "ReviewCellId"
@@ -30,48 +31,71 @@ class BundleDetailController: UICollectionViewController,UICollectionViewDelegat
         super.viewDidLoad()
         
         print((bundle?.name)! + " printed in bundle detail view did load")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(GoToTabbar))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(GoToHomePage))
         
         collectionView?.alwaysBounceVertical = true
         collectionView?.backgroundColor = UIColor.white
         collectionView?.register(BundleDetailHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         collectionView?.register(TimePriceCell.self, forCellWithReuseIdentifier: TimePriceCellId)
+        collectionView?.register(FunctionCell.self, forCellWithReuseIdentifier: FunctionCellId)
         collectionView?.register(RecipeCell.self, forCellWithReuseIdentifier: RecipeCellId)
         collectionView?.register(DescriptionCell.self, forCellWithReuseIdentifier: DescriptionCellId)
     }
     
-    func GoToTabbar() {
-        self.showBundleDetailTabBarForBundle(bundle: bundle!)
+    func GoToHomePage() {
+        self.ShowBundleHomePage(bundle: bundle!)
     }
     
-    func showBundleDetailTabBarForBundle(bundle: Bundles) {
-        let layout = UICollectionViewFlowLayout()
-        let tabbarController = TabBarController()
-        tabbarController.bundle = self.bundle
-        let preparationController = PreparationController(collectionViewLayout: layout)
-        preparationController.bundle = bundle
-        let recipeController = RecipeController(collectionViewLayout: layout)
-        recipeController.bundle = self.bundle
+    func ShowBundleHomePage(bundle: Bundles) {
+        
         let homepageController = HomepageController()
         homepageController.bundle = self.bundle
-        let shoppingListController = ShoppingListController()
-        shoppingListController.bundle = self.bundle
+
         navigationController?.pushViewController(homepageController, animated: true)
     }
     
+    func ShowShoppingList(bundle: Bundles) {
+
+        let shoppingListController = ShoppingListController()
+        shoppingListController.bundle = self.bundle
+        navigationController?.pushViewController(shoppingListController, animated: true)
+    }
+    
+    func ShowPreparation(bundle: Bundles) {
+        
+        let layout = UICollectionViewFlowLayout()
+        
+        let preparationController = PreparationController(collectionViewLayout: layout)
+        preparationController.bundle = bundle
+
+        navigationController?.pushViewController(preparationController, animated: true)
+    }
+    
+    func ShowRecipe(bundle: Bundles) {
+        
+        let layout = UICollectionViewFlowLayout()
+
+        let recipeController = RecipeController(collectionViewLayout: layout)
+        recipeController.bundle = self.bundle
+
+        navigationController?.pushViewController(recipeController, animated: true)
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch indexPath.item {
-            case 0:
-                return CGSize(width:view.frame.width, height:100)
-            case 1:
-                return CGSize(width:view.frame.width, height:400)
+        case 0:
+            return CGSize(width:view.frame.width, height:110)
+        case 1:
+            return CGSize(width: view.frame.width, height: 100)
+        case 2:
+            return CGSize(width:view.frame.width, height:400)
 
-            default:
-                return CGSize(width:view.frame.width, height:200)
+        default:
+            return CGSize(width:view.frame.width, height:200)
             }
     }
     
@@ -83,6 +107,11 @@ class BundleDetailController: UICollectionViewController,UICollectionViewDelegat
                 cell.bundle = bundle
                 return cell
             case 1:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FunctionCellId, for: indexPath) as! FunctionCell
+                cell.bundle = bundle
+                cell.bundleDetailController = self
+                return cell
+            case 2:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeCellId, for: indexPath) as! RecipeCell
                 cell.bundle = bundle
                 return cell

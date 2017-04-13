@@ -44,8 +44,6 @@ class RecipeCell: BaseCell, UICollectionViewDelegate,UICollectionViewDataSource,
         addConstraintsWithFormat(format: "V:|[v0]|", views: collectionView)
         
         collectionView.register(RecipeImageCell.self, forCellWithReuseIdentifier: cellId)
-        
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -66,15 +64,6 @@ class RecipeCell: BaseCell, UICollectionViewDelegate,UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsetsMake(0, 14, 0, 14)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("image selected")
-        descriptionLabel.recipeDescription.text = recipes[indexPath.item].details
-        recipeDes = recipes[indexPath.item].details
-        print(descriptionLabel.recipeDescription.text ?? "nothing")
-        
-    }
-    
     
     private class RecipeImageCell: BaseCell {
         

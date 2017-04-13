@@ -30,8 +30,7 @@ class PreparationController: UICollectionViewController, UICollectionViewDelegat
         titleLable.textColor = UIColor.white
         navigationItem.titleView = titleLable
         titleLable.font = UIFont.systemFont(ofSize: 20)
-        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: #selector(PreparationController.goBack))
-        navigationItem.leftBarButtonItem = backButton
+ 
         collectionView?.backgroundColor = UIColor.white
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellVideo")
         

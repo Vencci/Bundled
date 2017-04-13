@@ -104,6 +104,13 @@ class TimePriceCell: BaseCell {
         return label
     }()
     
+    let dividerLineView: UIView = { () -> UIView in
+        let view = UIView()
+        view.backgroundColor = UIColor(white: 0.4, alpha: 0.4)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     override func setupViews() {
         super.setupViews()
         
@@ -116,6 +123,7 @@ class TimePriceCell: BaseCell {
         addSubview(totalTimeLabel)
         addSubview(totalTime)
         addSubview(totalPrice)
+        addSubview(dividerLineView)
 
         
         addConstraintsWithFormat(format: "H:|-20-[v0(20)]", views: timeIcon)
@@ -144,6 +152,10 @@ class TimePriceCell: BaseCell {
         
         addConstraintsWithFormat(format: "H:|-70-[v0(100)]", views: totalPrice)
         addConstraintsWithFormat(format: "V:|-70-[v0(34)]", views: totalPrice)
+        
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-14-[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":dividerLineView]))
+        
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-70-[v0(34)]-25-[v1(1)]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":priceIcon, "v1": dividerLineView]))
         
         backgroundColor = UIColor.clear
         

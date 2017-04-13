@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,8 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        let featuredAppsController = LoginViewController()
-        window?.rootViewController = UINavigationController(rootViewController:featuredAppsController)
+        let logginViewController = LoginViewController()
+        window?.rootViewController = UINavigationController(rootViewController:logginViewController)
+        //FIRApp.configure()
         return true
     }
 
