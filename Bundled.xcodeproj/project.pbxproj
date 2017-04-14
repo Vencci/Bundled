@@ -102,8 +102,15 @@
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		90A175211EA07D5F0030355A /* SecondFunctionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondFunctionCell.swift; sourceTree = "<group>"; };
 		90A175231EA07D830030355A /* SecondBundleDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondBundleDetailController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		ADD4F0EFA57BEDC2C6E8BADF /* Pods-Bundled.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bundled.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bundled/Pods-Bundled.release.xcconfig"; sourceTree = "<group>"; };
 		F4977BFC0020741FF53ABA92 /* Pods-Bundled.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bundled.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bundled/Pods-Bundled.debug.xcconfig"; sourceTree = "<group>"; };
+=======
+		90A175251EA1252D0030355A /* cutchicken.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cutchicken.mp4; sourceTree = "<group>"; };
+		90A175261EA12C2B0030355A /* trimrib.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = trimrib.mp4; sourceTree = "<group>"; };
+		9E38117809455E6712BF9A89 /* Pods_Bundled.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bundled.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC36D6FD1D78BD4C32A7BB52 /* Pods-Bundled.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bundled.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bundled/Pods-Bundled.release.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> d0775b71a292ff29e99caa62ee12879150c08da0
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +147,8 @@
 				9020C0A71E9B394100402B9D /* cutpotato.mp4 */,
 				9020C0A81E9B394100402B9D /* peelsalmon.mp4 */,
 				9020C0A91E9B394100402B9D /* pinnapple.mp4 */,
+				90A175251EA1252D0030355A /* cutchicken.mp4 */,
+				90A175261EA12C2B0030355A /* trimrib.mp4 */,
 				169362B31E4FBBB500F9B79B /* Bundled */,
 				169362B21E4FBBB500F9B79B /* Products */,
 				169362B81E4FBBB500F9B79B /* Main.storyboard */,
