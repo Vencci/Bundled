@@ -9,6 +9,12 @@
 import UIKit
 
 
+let asianBundleCover = ["asianbundle1", "asianbundle2", "asianbundle3", "asianbundle4", "asianbundle5", "asianbundle6", "asianbundle7", "asianbundle8"]
+
+let euroBuncleCover = ["eurobundle1", "eurobundle2", "eurobundle3", "eurobundle4", "eurobundle5"]
+
+let amerBuncleCover = ["americanbundle1", "americanbundle2", "americanbundle3", "americanbundle4", "americanbundle5", "americanbundle6"]
+
 let eggPath: String? = Bundle.main.path(forResource: "beategg", ofType: "mp4")
 let eggURL = URL(fileURLWithPath: eggPath!)
 var beatEggs = Preparation(url: eggURL, prepTime: 10, desc: "BEAT eggs, milk and nutmeg in shallow dish until blended.", imageName: "beategg")
@@ -45,6 +51,14 @@ let cutbroccoliPath: String? = Bundle.main.path(forResource: "cutbroccoli", ofTy
 let cutbroccoliURL = URL(fileURLWithPath: cutbroccoliPath!)
 var trimBroccoli = Preparation(url: cutbroccoliURL, prepTime: 3, desc: "trim broccoli rabe", imageName: "cutbroccoli")
 
+let cutchickenPath: String? = Bundle.main.path(forResource: "cutchicken", ofType: "mp4")
+let cutchickenURL = URL(fileURLWithPath: cutchickenPath!)
+var cutchicken = Preparation(url: cutchickenURL, prepTime: 5, desc: "slice chicken into chunks", imageName: "cutchicken")
+
+let trimribPath: String? = Bundle.main.path(forResource: "cutchicken", ofType: "mp4")
+let trimribURL = URL(fileURLWithPath: trimribPath!)
+var trimrib = Preparation(url: trimribURL, prepTime: 10, desc: "trim the rib", imageName: "trimrib")
+
 
 var recipeArray = [Recipe]()
 
@@ -71,3 +85,9 @@ let sesameGreenBeans = Recipe(id: 8, name: "Sesame Green Beans",category: "lowfa
 let cedarPlankedSalmon = Recipe(id: 9, name: "Cedar Planked Salmon",category: "lowfatseafood", preparationArray: [peelsalmon], imageName: "salmonImage", price: 15, cookTime: 20, tag: ["lowfat", "seafood", "lunch", "dinner"], ingredients: ["green onions" : (1, "pieces"), "salmon fillets, skin removed" : (2, "pounds")], steps: [("soakPlank", "Soak the cedar planks for at least 1 hour in warm water. Soak longer if you have time."), ("soaksalmonimage", "In a shallow dish, stir together the vegetable oil, rice vinegar, sesame oil, soy sauce, green onions, ginger, and garlic. Place the salmon fillets in the marinade and turn to coat. Cover and marinate for at least 15 minutes, or up to one hour."), ("grillsalmonImage", "Place the salmon fillets onto the planks and discard the marinade. Cover, and grill for about 20 minutes. Fish is done when you can flake it with a fork. It will continue to cook after you remove it from the grill.")], details: "Where this recipe calls for lemon zest and rosemary, the native Coast Salish Indians on Vancouver Island would use grand-fir needles. Either way, the salmon takes on a light, smoky woodiness from grilling on a cedar plank, for a lovely pairing of earth and ocean.")
 
 let broccoli = Recipe(id: 9, name: "Broccoli Rabe with Roasted Peppers",category: "vagetarian", preparationArray: [trimBroccoli], imageName: "brocolli", price: 5, cookTime: 10, tag: ["lowfat", "vegetarian", "lunch", "dinner"], ingredients: ["cloves garlic" : (5, "pieces"), "bunch broccoli rabe" : (1, "piece")], steps: [("boilbroc", "Bring a large pot of lightly salted water to a boil. Add the broccoli rabe, and cook uncovered until the stems are tender, about 5 minutes. Drain in a colander."), ("heatF", "Heat the olive oil in a large skillet over medium heat. Stir in the garlic, and cook until tender, about 1 minute."), ("stirbroImage", "Add the broccoli rabe. Cook and stir until the broccoli rabe has been cooked to your desired degree of tenderness, about 5 minutes for soft. Stir in the roasted peppers until heated, then remove the skillet from the heat, and stir in the lemon juice. Sprinkle with Parmesan cheese to serve.")], details: "Orecchiette with broccoli rabe, also known as rapini, is a classic dish from Apulia, the region of Italy that makes up the heel of the country’s boot shape. To make the dish more colorful, I added red bell pepper to the traditional mix. The sweetness of the peppers makes a nice contrast to the bitter greens.")
+
+let kungpao = Recipe(id: 10, name: "Kung Pao Chicken", category: "asian", preparationArray: [cutchicken], imageName: "kungpao", price: 10, cookTime: 15, tag: ["lowfat", "lunch", "dinner"], ingredients: ["peanuts" : (4, "ounce"), "chickenbreast": (1, "pounds"), "green onions": (4, "piece")], steps: [("marinade", "Combine 1 tablespoon wine, 1 tablespoon soy sauce, 1 tablespoon oil and 1 tablespoon cornstarch/water mixture and mix together. Place chicken pieces in a glass dish or bowl and add marinade. Toss to coat. Cover dish and place in refrigerator for about 30 minutes."), ("sauce", " In a small bowl combine 1 tablespoon wine, 1 tablespoon soy sauce, 1 tablespoon oil, 1 tablespoon cornstarch/water mixture, chili paste, vinegar and sugar. Mix together and add green onion, garlic, water chestnuts and peanuts. In a medium skillet, heat sauce slowly until aromatic."), ("mix", "Meanwhile, remove chicken from marinade and saute in a large skillet until meat is white and juices run clear. When sauce is aromatic, add sauteed chicken to it and let simmer together until sauce thickens.")], details: "Spicy chicken with peanuts, similar to what is served in Chinese restaurants. It is easy to make, and you can be as sloppy with the measurements as you want. They reduce to a nice, thick sauce. Substitute cashews for peanuts, or bamboo shoots for the water chestnuts. You can't go wrong! Enjoy!")
+
+let spareribs = Recipe(id: 11, name: "Chinese Spareribs", category: "asian", preparationArray: [trimrib], imageName: "rib", price: 15, cookTime: 75, tag: ["lunch", "dinner"], ingredients: ["pork spareribs": (1, "pounds"), "honey": (1, "bottle"), "sake": (1, "bottle")], steps: [("preprib", "In a shallow glass dish, mix together the hoisin sauce, ketchup, honey, soy sauce, sake, rice vinegar, lemon juice, ginger, garlic and five-spice powder. Place the ribs in the dish, and turn to coat. Cover and marinate in the refrigerator for 2 hours, or as long as overnight."), ("heatoven", "Preheat the oven to 325 degrees F (165 degrees C). Fill a broiler tray with enough water to cover the bottom. Place the grate or rack over the tray. Arrange the ribs on the grate."), ("inoven", "Place the broiler rack in the center of the oven. Cook for 40 minutes, turning and brushing with the marinade every 10 minutes. Let the marinade cook on for the final 10 minutes to make a glaze. Finish under the broiler if desired. Discard any remaining marinade.")], details: " This recipe is pretty simple, and yields tender, juicy, tangy ribs. In Japan, I cooked this in the fish broiler, but it should be fine on the grill or in the oven." )
+
+let buns = Recipe(id: 12, name: "Chinese Steamed Buns", category: "asian", preparationArray: [])

@@ -104,12 +104,14 @@ class BundleDetailController: UICollectionViewController,UICollectionViewDelegat
         }
     }
     
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         switch indexPath.item {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TimePriceCellId, for: indexPath) as! TimePriceCell
             cell.bundle = bundle
+            
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FunctionCellId, for: indexPath) as! FunctionCell
