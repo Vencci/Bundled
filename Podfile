@@ -6,5 +6,8 @@ target 'Bundled' do
   use_frameworks!
 
   # Pods for Bundled
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
 
 end

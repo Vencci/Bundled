@@ -8,6 +8,7 @@
 
 import UIKit
 //F
+import Firebase
 class LoginViewController: UIViewController {
     
     // login input UI
@@ -40,15 +41,65 @@ class LoginViewController: UIViewController {
     }
     
     func handleLogin() {
-        let newMessageController = HomepageController()
-        let navController = UINavigationController(rootViewController: newMessageController)
-        present(navController, animated: true, completion: nil)
+        guard let email = emailTextField.text, let password = passwordTextField.text else {
+            print("Form is not valid")
+            return
+        }
+        
+        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+            
+            if error != nil {
+                print(error)
+                return
+            }
+            
+            //successfully logged in our user
+            //self.dismiss(animated: true, completion: nil)
+            let newMessageController = HomepageController()
+            let navController = UINavigationController(rootViewController: newMessageController)
+            self.present(navController, animated: true, completion: nil)
+            
+        })
     }
     //调用register按键激活firebase
     func handleRegister() {
-        let newMessageController = HomepageController()
-        let navController = UINavigationController(rootViewController: newMessageController)
-        present(navController, animated: true, completion: nil)
+        //firebase here
+        guard let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text
+            else {
+                print("Form is not valid")
+                return
+        }
+        //
+        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user: FIRUser?, error) in
+            
+            if error != nil {
+                print(error)
+                return
+            }
+            guard let uid = user?.uid else {
+                return
+            }
+            let ref = FIRDatabase.database().reference(fromURL: "https://bundle-d5733.firebaseio.com/")
+            //建立 bundle database的子文件夹 ”node“，并建立编号
+            let usersReference = ref.child("users").child(uid)
+            
+            let values = ["name": name, "email": email]
+            usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
+                
+                if err != nil {
+                    print(err)
+                    return
+                }
+                //self.dismiss(animated: true, completion: nil)
+                let newMessageController = HomepageController()
+                let navController = UINavigationController(rootViewController: newMessageController)
+                self.present(navController, animated: true, completion: nil)
+                print("Saved user successfully into Firebase db")
+                
+            })
+            
+        })
+        //FIRAuth结束
     }
     
     let nameTextField: UITextField = {
@@ -134,9 +185,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         //firebase
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         
-        view.addGestureRecognizer(tap)
         
         
         
@@ -153,9 +202,6 @@ class LoginViewController: UIViewController {
         setupLoginRegisterSegmentedControl()
     }
     
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
     //设置reference, class里的任意一个func 都可以使用
     var inputsContainerViewHeightAnchor: NSLayoutConstraint?
     var nameTextFieldHeightAnchor: NSLayoutConstraint?
@@ -241,9 +287,6 @@ class LoginViewController: UIViewController {
         loginRegisterButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = true
-    }
     
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

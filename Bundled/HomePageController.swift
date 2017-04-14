@@ -9,6 +9,7 @@
 //隐藏键盘功能需要加上
 
 import UIKit
+import Firebase
 
 // flag
 var morningFlag: Int = 1
@@ -246,7 +247,33 @@ class HomepageController: UIViewController {
         navigationItem.backBarButtonItem?.isEnabled = false
         let imageLeft = UIImage(named: "user40")
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: imageLeft, style: .plain, target: self, action: #selector(goToAccount))
+        //check
+        checkIfUserIsLoggedIn()
     }
+    
+    func checkIfUserIsLoggedIn() {
+        if FIRAuth.auth()?.currentUser?.uid == nil {
+            perform(#selector(handleLogout), with: nil, afterDelay: 0)
+        } else {
+            let uid = FIRAuth.auth()?.currentUser?.uid
+            FIRDatabase.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+                if let dictionary = snapshot.value as? [String: AnyObject] {
+                    self.navigationItem.title = dictionary["name"] as? String
+                }
+            }, withCancel: nil)
+        }
+    }
+    func handleLogout() {
+        do {
+            try FIRAuth.auth()?.signOut()
+        } catch let logoutError {
+            print(logoutError)
+        }
+        
+        let loginController = LoginViewController()
+        present(loginController, animated: true, completion: nil)
+    }
+
     func goToAccount(){
         let newMessageController = AccountViewController()
         let navController = UINavigationController(rootViewController: newMessageController)

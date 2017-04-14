@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class AccountViewController: UIViewController {
     /* let BgImage: UIImageView = {
      let theImageView = UIImageView()
@@ -64,7 +64,7 @@ class AccountViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(UIColor.red, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-        // button.addTarget(self, action: #selector(MorningFunc), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleLogout), for: .touchUpInside)
         return button
     }()
     
@@ -162,7 +162,35 @@ class AccountViewController: UIViewController {
         setupVegetableButton()
         setupLowfatButton()
         setUpOutButton()
+        //check
+        checkIfUserIsLoggedIn()
     }
+    
+    func checkIfUserIsLoggedIn() {
+        if FIRAuth.auth()?.currentUser?.uid == nil {
+            perform(#selector(handleLogout), with: nil, afterDelay: 0)
+        } else {
+            let uid = FIRAuth.auth()?.currentUser?.uid
+            FIRDatabase.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+                if let dictionary = snapshot.value as? [String: AnyObject] {
+                    self.userName.text = dictionary["name"] as? String
+                    self.email.text = dictionary["email"] as? String
+                }
+            }, withCancel: nil)
+        }
+    }
+
+    func handleLogout() {
+        do {
+            try FIRAuth.auth()?.signOut()
+        } catch let logoutError {
+            print(logoutError)
+        }
+        
+        let loginController = LoginViewController()
+        present(loginController, animated: true, completion: nil)
+    }
+
     func handleBack(){
         dismiss(animated: true, completion: nil)
     }
