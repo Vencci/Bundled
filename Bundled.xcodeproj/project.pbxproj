@@ -49,6 +49,8 @@
 		9020C0BB1E9B3E7700402B9D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0BA1E9B3E7700402B9D /* Login.swift */; };
 		9020C0C11E9D5AA700402B9D /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9020C0C01E9D5AA700402B9D /* BaseCell.swift */; };
 		908BC4EF1E8D49C800AB2380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908BC4EE1E8D49C800AB2380 /* Main.storyboard */; };
+		90A175221EA07D5F0030355A /* SecondFunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A175211EA07D5F0030355A /* SecondFunctionCell.swift */; };
+		90A175241EA07D830030355A /* SecondBundleDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A175231EA07D830030355A /* SecondBundleDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,8 @@
 		9020C0BA1E9B3E7700402B9D /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		9020C0C01E9D5AA700402B9D /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseCell.swift; path = ../BaseCell.swift; sourceTree = "<group>"; };
 		908BC4EE1E8D49C800AB2380 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		90A175211EA07D5F0030355A /* SecondFunctionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondFunctionCell.swift; sourceTree = "<group>"; };
+		90A175231EA07D830030355A /* SecondBundleDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondBundleDetailController.swift; sourceTree = "<group>"; };
 		9E38117809455E6712BF9A89 /* Pods_Bundled.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bundled.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC36D6FD1D78BD4C32A7BB52 /* Pods-Bundled.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bundled.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bundled/Pods-Bundled.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +200,7 @@
 				9020C0761E9B360200402B9D /* AccountView.swift */,
 				9020C0901E9B371F00402B9D /* TimePriceCell.swift */,
 				900FFFCA1E9D7E57007569D6 /* FunctionCell.swift */,
+				90A175211EA07D5F0030355A /* SecondFunctionCell.swift */,
 				9020C0921E9B375000402B9D /* RecipeCell.swift */,
 				9020C0941E9B376500402B9D /* RecipeStepCell.swift */,
 				9020C0961E9B378000402B9D /* DescriptionCell.swift */,
@@ -213,6 +218,7 @@
 				9020C0721E9B35C000402B9D /* TestViewController.swift */,
 				9020C0541E9B341800402B9D /* FeaturedBundlesController.swift */,
 				9020C09E1E9B391700402B9D /* BundleDetailController.swift */,
+				90A175231EA07D830030355A /* SecondBundleDetailController.swift */,
 				9020C05E1E9B34AE00402B9D /* PreparationController.swift */,
 				9020C05C1E9B348D00402B9D /* TabBarController.swift */,
 				9020C05A1E9B344700402B9D /* ShoppingListController.swift */,
@@ -362,6 +368,7 @@
 				9020C0971E9B378000402B9D /* DescriptionCell.swift in Sources */,
 				9020C0651E9B353C00402B9D /* Bundles.swift in Sources */,
 				9020C0671E9B355A00402B9D /* VideoCell.swift in Sources */,
+				90A175241EA07D830030355A /* SecondBundleDetailController.swift in Sources */,
 				9020C0631E9B351500402B9D /* User.swift in Sources */,
 				9020C0731E9B35C000402B9D /* TestViewController.swift in Sources */,
 				9020C04E1E9B33B200402B9D /* Models.swift in Sources */,
@@ -371,6 +378,7 @@
 				9020C05B1E9B344700402B9D /* ShoppingListController.swift in Sources */,
 				9020C0521E9B33EB00402B9D /* CategoryCell.swift in Sources */,
 				9020C0911E9B371F00402B9D /* TimePriceCell.swift in Sources */,
+				90A175221EA07D5F0030355A /* SecondFunctionCell.swift in Sources */,
 				9020C0951E9B376500402B9D /* RecipeStepCell.swift in Sources */,
 				9020C0751E9B35DE00402B9D /* Recipe.swift in Sources */,
 				9020C05D1E9B348D00402B9D /* TabBarController.swift in Sources */,

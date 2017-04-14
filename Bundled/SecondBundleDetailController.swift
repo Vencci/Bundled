@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BundleDetailController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
+class SecondBundleDetailController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
     var bundle: Bundles? {
         didSet {
@@ -16,7 +16,7 @@ class BundleDetailController: UICollectionViewController,UICollectionViewDelegat
         }
     }
     
-    var bundleDetailHeader = BundleDetailHeader()
+    var bundleDetailHeader = SecondBundleDetailHeader()
     
     private let headerId = "headerId"
     private let TimePriceCellId = "TimePriceCellId"
@@ -31,28 +31,28 @@ class BundleDetailController: UICollectionViewController,UICollectionViewDelegat
         super.viewDidLoad()
         
         print((bundle?.name)! + " printed in bundle detail view did load")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add to Pantry", style: .plain, target: self, action: #selector(GoToHomePage))
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "ADD TO PANTRY", style: .plain, target: self, action: #selector(GoToHomePage))
         
         collectionView?.alwaysBounceVertical = true
         collectionView?.backgroundColor = UIColor.white
-        collectionView?.register(BundleDetailHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
+        collectionView?.register(SecondBundleDetailHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         collectionView?.register(TimePriceCell.self, forCellWithReuseIdentifier: TimePriceCellId)
-        collectionView?.register(FunctionCell.self, forCellWithReuseIdentifier: FunctionCellId)
+        collectionView?.register(SecondFunctionCell.self, forCellWithReuseIdentifier: FunctionCellId)
         collectionView?.register(RecipeCell.self, forCellWithReuseIdentifier: RecipeCellId)
         collectionView?.register(DescriptionCell.self, forCellWithReuseIdentifier: DescriptionCellId)
     }
     
-    func GoToHomePage() {
+   /* func GoToHomePage() {
         self.ShowBundleHomePage(bundle: bundle!)
-    }
+    }*/
     
-    func ShowBundleHomePage(bundle: Bundles) {
+   /* func ShowBundleHomePage(bundle: Bundles) {
         
         let homepageController = HomepageController()
         homepageController.bundle = self.bundle
         navigationController?.show(homepageController, sender: self)
         //navigationController?.pushViewController(homepageController, animated: true)
-    }
+    }*/
     
     func ShowShoppingList(bundle: Bundles) {
         
@@ -107,7 +107,7 @@ class BundleDetailController: UICollectionViewController,UICollectionViewDelegat
             cell.bundle = bundle
             return cell
         case 1:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FunctionCellId, for: indexPath) as! FunctionCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FunctionCellId, for: indexPath) as! SecondFunctionCell
             cell.bundle = bundle
             cell.bundleDetailController = self
             return cell
@@ -129,14 +129,14 @@ class BundleDetailController: UICollectionViewController,UICollectionViewDelegat
     
     //deque header cell
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! BundleDetailHeader
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! SecondBundleDetailHeader
         header.bundle = bundle
         return header
     }
     
 }
 
-class BundleDetailHeader: BaseCell{
+class SecondBundleDetailHeader: BaseCell{
     
     let cellId = "bannerCellId"
     
@@ -218,7 +218,7 @@ class BundleDetailHeader: BaseCell{
     
 }
 
-extension UIView {
+/*extension UIView {
     func addConstraintsWithFormat(format: String, views: UIView...) {
         var viewsDictionary = [String: UIView]()
         for (index, view) in views.enumerated() {
@@ -230,3 +230,5 @@ extension UIView {
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutFormatOptions(), metrics: nil, views: viewsDictionary))
     }
 }
+*/
+
