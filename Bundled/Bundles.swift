@@ -25,19 +25,33 @@ class Bundles: NSObject, NSCoding {
     var preperations: [Preparation]?
     var ingredients: [String:(Float, String)]?
     
+    init(id: NSNumber?, name: String?, category: String?, imageName: String?, price: Float?, cookTime: Int?, prepTime: Int?, totalTime: Int?, recipes: [Recipe]?, preperations: [Preparation]?, ingredients: [String: (Float, String)]?) {
+        self.id = id
+        self.name = name
+        self.category = category
+        self.imageName = imageName
+        self.price = price
+        self.cookTime = cookTime
+        self.prepTime = prepTime
+        self.totalTime = totalTime
+        self.recipes = recipes
+        self.preperations = preperations
+        self.ingredients = ingredients
+    }
+    
     public required convenience init?(coder aDecoder: NSCoder) {
-        let id = aDecoder.decodeObject(forKey: "id") as? NSNumber?
-        let name = aDecoder.decodeObject(forKey: "name") as? String?
-        let category = aDecoder.decodeObject(forKey: "category") as? String?
-        let imageName = aDecoder.decodeObject(forKey: "imageName") as? String?
-        let price = aDecoder.decodeObject(forKey: "price") as? Float
-        let cookTime = aDecoder.decodeObject(forKey: "cookTime") as? Int?
-        let prepTime = aDecoder.decodeObject(forKey: "prepTime") as? Int?
-        let totolTime = aDecoder.decodeObject(forKey: "totalTime") as? Int?
-        let recipes = aDecoder.decodeObject(forKey: "recipes") as? [Recipe]?
-        let preperations = aDecoder.decodeObject(forKey: "preperations") as? [Preparation]?
-        let ingredients = aDecoder.decodeObject(forKey: "ingredients") as? [String:(Float, String)]?
-        self.init()
+        let id = aDecoder.decodeObject(forKey: "id") as? NSNumber
+        let name = aDecoder.decodeObject(forKey: "name") as? String
+        let category = aDecoder.decodeObject(forKey: "category") as? String
+        let imageName = aDecoder.decodeObject(forKey: "imageName") as? String
+        let price = Float(aDecoder.decodeFloat(forKey: "price"))
+        let cookTime = Int(aDecoder.decodeCInt(forKey: "cookTime"))
+        let prepTime = Int(aDecoder.decodeCInt(forKey: "prepTime"))
+        let totalTime = Int(aDecoder.decodeCInt(forKey: "totalTime"))
+        let recipes = aDecoder.decodeObject(forKey: "recipes") as? [Recipe]
+        let preperations = aDecoder.decodeObject(forKey: "preperations") as? [Preparation]
+        let ingredients = aDecoder.decodeObject(forKey: "ingredients") as? [String:(Float, String)]
+        self.init(id: id, name: name, category: category, imageName: imageName, price: price, cookTime: cookTime, prepTime: prepTime, totalTime: totalTime, recipes: recipes, preperations: preperations, ingredients: ingredients)
 
     }
     public func encode(with aCoder: NSCoder) {
@@ -55,6 +69,20 @@ class Bundles: NSObject, NSCoding {
         
     }
     
+    static func saveBundleInfo(_ bundle: Bundles) -> Bool {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(bundle, toFile: Bundles.ArchiveURL.path)
+        if !isSuccessfulSave {
+            print("Failed to save info")
+            return false
+        } else {
+            print("Info saved")
+            return true
+        }
+    }
+    
+    static func loadBundleInfo() -> Bundles? {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Bundles.ArchiveURL.path) as? Bundles
+    }
     
     func sumPrice(recipes: [Recipe]) -> Float {
         var sum: Float = 0.00

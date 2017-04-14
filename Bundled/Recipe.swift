@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Recipe: NSObject {
+class Recipe: NSObject, NSCoding {
     var id: NSNumber
     var name: String
     var category: String
@@ -33,6 +33,36 @@ class Recipe: NSObject {
         self.ingredients = ingredients
         self.steps = steps
         self.details = details
+    }
+    
+    public required convenience init?(coder aDecoder: NSCoder) {
+        let id = aDecoder.decodeObject(forKey: "id") as? NSNumber
+        let name = aDecoder.decodeObject(forKey: "name") as? String
+        let category = aDecoder.decodeObject(forKey: "category") as? String
+        let preparationArray = aDecoder.decodeObject(forKey: "preparationArray") as? [Preparation]
+        let imageName = aDecoder.decodeObject(forKey: "imageName") as? String
+        let price = Float(aDecoder.decodeFloat(forKey: "price"))
+        let cookTime = Int(aDecoder.decodeCInt(forKey: "cookTime"))
+        let tag = aDecoder.decodeObject(forKey: "tag") as? [String]
+        let ingredients = aDecoder.decodeObject(forKey: "ingredients") as? [String: (Float, String)]
+        let steps = aDecoder.decodeObject(forKey: "steps") as? [(String, String)]
+        let details = aDecoder.decodeObject(forKey: "details") as? String
+        self.init(id: id!, name: name!, category: category!, preparationArray: preparationArray!, imageName: imageName!, price: price, cookTime: cookTime, tag: tag!, ingredients: ingredients!, steps: steps!, details: details!)
+    }
+    
+    public func encode(with aCoder: NSCoder) {
+        aCoder.encode(id, forKey: "id")
+        aCoder.encode(name, forKey: "name")
+        aCoder.encode(category, forKey: "category")
+        aCoder.encode(preparationArray, forKey: "preparationArray")
+        aCoder.encode(imageName, forKey: "imageName")
+        aCoder.encode(price, forKey: "price")
+        aCoder.encode(cookTime, forKey: "cookTime")
+        aCoder.encode(tag, forKey: "tag")
+        aCoder.encode(ingredients, forKey: "ingredients")
+        aCoder.encode(steps, forKey: "steps")
+        aCoder.encode(details, forKey: "details")
+        
     }
 }
 

@@ -45,7 +45,7 @@ class BundleCategory: NSObject{
             
             bundles = [Bundles]()
             for dict in value as! [[String: Any]] {
-                let bundle = Bundles()
+                let bundle = Bundles(id: 0, name: "", category: "", imageName: "", price: 0, cookTime: 0, prepTime: 0, totalTime: 0, recipes: recipeArray, preperations: [beatEggs], ingredients: ["": (0, "")])
                 bundle.setValuesForKeys(dict)
                 bundles?.append(bundle)
             }
@@ -101,7 +101,7 @@ class BundleCategory: NSObject{
         recipeArray.append(cedarPlankedSalmon)
         recipeArray.append(broccoli)
         
-        let firstFeaturedBundle = Bundles()
+        let firstFeaturedBundle = Bundles(id: 0, name: "", category: "", imageName: "", price: 0, cookTime: 0, prepTime: 0, totalTime: 0, recipes: recipeArray, preperations: [beatEggs], ingredients: ["": (0, "")])
         firstFeaturedBundle.name = "Fried Feast"
         firstFeaturedBundle.imageName = "bundle3"
         firstFeaturedBundle.category = "Traditional American"
@@ -116,7 +116,7 @@ class BundleCategory: NSObject{
 
         bannerBundles.append(firstFeaturedBundle)
         
-        let secondFeaturedBundle = Bundles()
+        let secondFeaturedBundle = Bundles(id: 0, name: "", category: "", imageName: "", price: 0, cookTime: 0, prepTime: 0, totalTime: 0, recipes: recipeArray, preperations: [beatEggs], ingredients: ["": (0, "")])
         secondFeaturedBundle.name = "Fantastic Dumplings"
         secondFeaturedBundle.imageName = "bundle4"
         secondFeaturedBundle.category = "Asian"
@@ -130,7 +130,7 @@ class BundleCategory: NSObject{
 
         bannerBundles.append(secondFeaturedBundle)
         
-        let thirdFeaturedBundle = Bundles()
+        let thirdFeaturedBundle = Bundles(id: 0, name: "", category: "", imageName: "", price: 0, cookTime: 0, prepTime: 0, totalTime: 0, recipes: recipeArray, preperations: [beatEggs], ingredients: ["": (0, "")])
         thirdFeaturedBundle.name = "Beef Tacos"
         thirdFeaturedBundle.imageName = "bundle5"
         thirdFeaturedBundle.category = "Mexican"
@@ -154,7 +154,7 @@ class BundleCategory: NSObject{
         var bundles = [Bundles]()
         
         // logic
-        let oneoneBundle = Bundles()
+        let oneoneBundle = Bundles(id: 0, name: "", category: "", imageName: "", price: 0, cookTime: 0, prepTime: 0, totalTime: 0, recipes: recipeArray, preperations: [beatEggs], ingredients: ["": (0, "")])
         oneoneBundle.name = "Simple Made Delicious"
         oneoneBundle.imageName = "bundle1"
         oneoneBundle.category = "Asian Fusion"
@@ -168,7 +168,7 @@ class BundleCategory: NSObject{
         oneoneBundle.ingredients = oneoneBundle.allIngredients(bundle: oneoneBundle)
         bundles.append(oneoneBundle)
 
-        let onetwoBundle = Bundles()
+        let onetwoBundle = Bundles(id: 0, name: "", category: "", imageName: "", price: 0, cookTime: 0, prepTime: 0, totalTime: 0, recipes: recipeArray, preperations: [beatEggs], ingredients: ["": (0, "")])
         onetwoBundle.name = "Asian Blast"
         onetwoBundle.imageName = "bundle3"
         onetwoBundle.category = "Asian Fusion"
@@ -181,7 +181,7 @@ class BundleCategory: NSObject{
         onetwoBundle.ingredients = onetwoBundle.allIngredients(bundle: onetwoBundle)
         bundles.append(onetwoBundle)
         
-        let onethreeBundle = Bundles()
+        let onethreeBundle = Bundles(id: 0, name: "", category: "", imageName: "", price: 0, cookTime: 0, prepTime: 0, totalTime: 0, recipes: recipeArray, preperations: [beatEggs], ingredients: ["": (0, "")])
         onethreeBundle.name = "Tokyo Summit"
         onethreeBundle.imageName = "bundle4"
         onethreeBundle.category = "Asian Fusion"
@@ -205,7 +205,7 @@ class BundleCategory: NSObject{
         
         var vegetarianBundles = [Bundles]()
         
-        let twoooneBundle = Bundles()
+        let twoooneBundle = Bundles(id: 0, name: "", category: "", imageName: "", price: 0, cookTime: 0, prepTime: 0, totalTime: 0, recipes: recipeArray, preperations: [beatEggs], ingredients: ["": (0, "")])
         twoooneBundle.name = "Vegetarian Retreat"
         twoooneBundle.imageName = "bundle2"
         twoooneBundle.category = "Vegetarian"
