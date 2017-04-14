@@ -55,7 +55,7 @@ class VideoCell: BaseCell{
     
     let titleLabel: UILabel = {
         let lable = UILabel()
-        lable.backgroundColor = UIColor.yellow
+        lable.backgroundColor = UIColor.white
         lable.text = "dish introduction and name"
         return lable
     }()

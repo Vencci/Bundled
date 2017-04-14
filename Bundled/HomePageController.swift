@@ -41,7 +41,7 @@ class HomepageController: UIViewController {
         //iv.backgroundColor = UIColor.gray
         iv.numberOfLines = 1
         iv.layer.cornerRadius = 0
-
+        
         return iv
     }()
     
@@ -234,16 +234,16 @@ class HomepageController: UIViewController {
             view.addSubview(titleLabel)
             setupTitleLabel()
             setUpImageButton()
-
+            
         }
         if bundle?.name == nil {
             view.addSubview(emptyBundleLabel)
             setupEmptyBundleLabel()
         }
-
+        
         //naviagation bar
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Bundle", style: .plain, target: self, action: #selector(handlePopOver))
-        
+        navigationItem.backBarButtonItem?.isEnabled = false
         
     }
     
@@ -308,7 +308,7 @@ class HomepageController: UIViewController {
         let layout =  UICollectionViewFlowLayout()
         let newMessageController = FeaturedBundlesController(collectionViewLayout: layout)
         let navController = UINavigationController(rootViewController: newMessageController)
-        present(navController, animated: true, completion: nil)
+        navigationController?.pushViewController(newMessageController, animated: true)
     }
     // 各种constrains setup======================================================
     func SetUpInputInPupUp(){
@@ -377,10 +377,10 @@ class HomepageController: UIViewController {
     
     func goToBundle(){
         let layout =  UICollectionViewFlowLayout()
-        let newMessageController = BundleDetailController(collectionViewLayout: layout)
+        let newMessageController = SecondBundleDetailController(collectionViewLayout: layout)
         newMessageController.bundle = self.bundle
         let navController = UINavigationController(rootViewController: newMessageController)
-        present(navController, animated: true, completion: nil)
+        navigationController?.pushViewController(newMessageController, animated: true)
     }
     
     func handlePopOver(){
