@@ -244,7 +244,13 @@ class HomepageController: UIViewController {
         //naviagation bar
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Bundle", style: .plain, target: self, action: #selector(handlePopOver))
         navigationItem.backBarButtonItem?.isEnabled = false
-        
+        let imageLeft = UIImage(named: "user40")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: imageLeft, style: .plain, target: self, action: #selector(goToAccount))
+    }
+    func goToAccount(){
+        let newMessageController = AccountViewController()
+        let navController = UINavigationController(rootViewController: newMessageController)
+        present(navController, animated: true, completion: nil)
     }
     
     func dismissKeyboard() {

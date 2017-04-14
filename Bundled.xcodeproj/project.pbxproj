@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		169362BA1E4FBBB500F9B79B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169362B81E4FBBB500F9B79B /* Main.storyboard */; };
 		169362BF1E4FBBB500F9B79B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169362BD1E4FBBB500F9B79B /* LaunchScreen.storyboard */; };
+		1697FA331EA0880D00E4A27C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697FA321EA0880D00E4A27C /* AccountViewController.swift */; };
 		826FAF5E37A7E3AA2E54C345 /* Pods_Bundled.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E38117809455E6712BF9A89 /* Pods_Bundled.framework */; };
 		900FFFCB1E9D7E57007569D6 /* FunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900FFFCA1E9D7E57007569D6 /* FunctionCell.swift */; };
 		900FFFCD1E9D7EFF007569D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 900FFFCC1E9D7EFF007569D6 /* GoogleService-Info.plist */; };
@@ -58,6 +59,7 @@
 		169362B91E4FBBB500F9B79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		169362BE1E4FBBB500F9B79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169362C01E4FBBB500F9B79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1697FA321EA0880D00E4A27C /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		363ACC0642EDF3B2FD396378 /* Pods-Bundled.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bundled.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bundled/Pods-Bundled.debug.xcconfig"; sourceTree = "<group>"; };
 		900FFFCA1E9D7E57007569D6 /* FunctionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunctionCell.swift; path = ../FunctionCell.swift; sourceTree = "<group>"; };
 		900FFFCC1E9D7EFF007569D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				9020C05E1E9B34AE00402B9D /* PreparationController.swift */,
 				9020C05C1E9B348D00402B9D /* TabBarController.swift */,
 				9020C05A1E9B344700402B9D /* ShoppingListController.swift */,
+				1697FA321EA0880D00E4A27C /* AccountViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				9020C0951E9B376500402B9D /* RecipeStepCell.swift in Sources */,
 				9020C0751E9B35DE00402B9D /* Recipe.swift in Sources */,
 				9020C05D1E9B348D00402B9D /* TabBarController.swift in Sources */,
+				1697FA331EA0880D00E4A27C /* AccountViewController.swift in Sources */,
 				9020C0C11E9D5AA700402B9D /* BaseCell.swift in Sources */,
 				9020C0BB1E9B3E7700402B9D /* Login.swift in Sources */,
 				9020C0931E9B375000402B9D /* RecipeCell.swift in Sources */,
