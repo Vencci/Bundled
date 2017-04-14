@@ -181,6 +181,7 @@
 				9020C04D1E9B33B200402B9D /* Models.swift */,
 				9020C0641E9B353C00402B9D /* Bundles.swift */,
 				9020C0741E9B35DE00402B9D /* Recipe.swift */,
+				9020C0621E9B351500402B9D /* User.swift */,
 				9020C07A1E9B363D00402B9D /* RecipeCollection.swift */,
 			);
 			name = model;
@@ -191,7 +192,6 @@
 			children = (
 				9020C0C01E9D5AA700402B9D /* BaseCell.swift */,
 				9020C0511E9B33EB00402B9D /* CategoryCell.swift */,
-				9020C0621E9B351500402B9D /* User.swift */,
 				9020C0661E9B355A00402B9D /* VideoCell.swift */,
 				9020C0761E9B360200402B9D /* AccountView.swift */,
 				9020C0901E9B371F00402B9D /* TimePriceCell.swift */,

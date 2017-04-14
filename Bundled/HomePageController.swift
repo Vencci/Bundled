@@ -41,6 +41,7 @@ class HomepageController: UIViewController {
         //iv.backgroundColor = UIColor.gray
         iv.numberOfLines = 1
         iv.layer.cornerRadius = 0
+
         return iv
     }()
     
@@ -87,8 +88,8 @@ class HomepageController: UIViewController {
         //button.backgroundColor = UIColor(r: 80, g: 101, b: 161)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(BundleImage, for: .normal)
-        print("processed button")
         button.addTarget(self, action: #selector(goToBundle), for: .touchUpInside)
+        print("processed button")
         return button
     }()
     
@@ -217,6 +218,16 @@ class HomepageController: UIViewController {
         //add background
         view.addSubview(BgImage)
         someImageViewConstraints()
+        
+        // add blur effect
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+        blurEffectView = UIVisualEffectView(effect: blurEffect)//这有问题想办法放到外面
+        blurEffectView.frame = view.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.addSubview(blurEffectView)
+        effect = blurEffectView.effect
+        blurEffectView.effect = nil
+        
         //add bundle
         if bundle?.name != nil {
             view.addSubview(ImageButton)
@@ -229,14 +240,6 @@ class HomepageController: UIViewController {
             view.addSubview(emptyBundleLabel)
             setupEmptyBundleLabel()
         }
-        
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
-        blurEffectView = UIVisualEffectView(effect: blurEffect)//这有问题想办法放到外面
-        blurEffectView.frame = view.bounds
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.addSubview(blurEffectView)
-        effect = blurEffectView.effect
-        blurEffectView.effect = nil
 
         //naviagation bar
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Bundle", style: .plain, target: self, action: #selector(handlePopOver))

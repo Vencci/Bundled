@@ -43,11 +43,11 @@ class ShoppingListController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let title: UILabel = UILabel.init(frame: CGRect(x:0, y:0, width:tableView.bounds.width, height:50))
+        let title: UILabel = UILabel.init(frame: CGRect(x:0, y:0, width:tableView.bounds.width, height:80))
         title.text = "Shopping List"
         title.textColor = UIColor(red: 77.0/255.0, green: 98.0/255.0, blue: 130.0/255.0, alpha: 1.0)
         title.backgroundColor = UIColor(red: 225.0/255.0, green: 243.0/255.0, blue: 251.0/255.0, alpha: 1.0)
-        title.font = UIFont.boldSystemFont(ofSize: 15)
+        title.font = UIFont.boldSystemFont(ofSize: 20)
         title.textAlignment = NSTextAlignment.center
         tableView.tableHeaderView = title
     }
@@ -64,36 +64,27 @@ class ShoppingListController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        //cell.ingredients = self.bundle?.ingredients[indexPath.item]
         let cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "myIdentifier")
         
         let foodItem = ingredientsArray[indexPath.row]
         let itemQuantity = "\(quantitiesArray[indexPath.row].0) " + quantitiesArray[indexPath.row].1
         
         cell.textLabel?.text = itemQuantity + " of " + foodItem
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
         
-        //cell.detailTextLabel?.text = quantitiesArray[indexPath.row].1
-        /*
-        if food.completed{
-            cell.accessoryType = .checkmark
-        }
-        else{
-            cell.accessoryType = .none
-        }*/
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: false)
-        
-        //let tappedItem:  Ingredients = self.foods[indexPath.row] as Ingredients
-        
-        //tappedItem.completed = !tappedItem.completed
-        
-        tableView.reloadData()
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark{
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.none
+        }else{
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
+        }
     }
 }
