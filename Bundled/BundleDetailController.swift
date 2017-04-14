@@ -48,10 +48,15 @@ class BundleDetailController: UICollectionViewController,UICollectionViewDelegat
     
     func ShowBundleHomePage(bundle: Bundles) {
         
-        let homepageController = HomepageController()
+        let newMessageController = HomepageController()
+        newMessageController.bundle = self.bundle
+        let navController = UINavigationController(rootViewController: newMessageController)
+        present(navController, animated: true, completion: nil)
+        
+       /* let homepageController = HomepageController()
         homepageController.bundle = self.bundle
         navigationController?.show(homepageController, sender: self)
-        //navigationController?.pushViewController(homepageController, animated: true)
+        //navigationController?.pushViewController(homepageController, animated: true)*/
     }
     
     func ShowShoppingList(bundle: Bundles) {
